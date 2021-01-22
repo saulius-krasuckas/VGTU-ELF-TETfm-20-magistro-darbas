@@ -41,7 +41,6 @@ Via: `aruslt`
 Date: 2020-11-27 21:18:00 + 06:27s  
 Via: `aruslt`  
 
---- citata ---  
 > Vienas iš uždavinių yra heretogeninė struktūra: kur vieni palaiko MPTCP, o kiti ne.  
 > Tada statom TCP proxy. Galingos implementacijos yra dvi: Nginx ir HAproxy.  
 > Tada Windows kompas šnekasi su kitu serveriu (pvz. MS SQL).  
@@ -59,4 +58,3 @@ Via: `aruslt`
 > 
 > Vienas dalykas yra iperfu tarp 2 DC pamatuoti.  
 > O visai kitas yra realistinį SQL srautą pamatuoti -- atsiranda visai kitas žavesys!  
---- citata ---  
