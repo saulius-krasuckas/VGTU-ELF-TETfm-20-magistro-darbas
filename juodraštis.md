@@ -1,6 +1,7 @@
+```
 Date: 2020-11-26 15:37:00 + 29:36s  
-Via: `aruslt`  
-
+Via: aruslt  
+```
 > Tokiose temose būtinai siūlau Versus principą.  
 > 
 > Pvz. MPTCP vs L3 srauto balansavimas:  
@@ -38,9 +39,10 @@ Via: `aruslt`
 > Kodėl ne TCP? Nes nuobodus (apibrėžimas), nes daug matematikos ir pan.  
 > M2: Tiesiog konfiginu MPTCP tarp dviejų mašinų, prasideda malonumas.  
 
+```
 Date: 2020-11-27 21:18:00 + 06:27s  
-Via: `aruslt`  
-
+Via: aruslt  
+```
 > Vienas iš uždavinių yra heretogeninė struktūra: kur vieni palaiko MPTCP, o kiti ne.  
 > Tada statom TCP proxy. Galingos implementacijos yra dvi: Nginx ir HAproxy.  
 > Tada Windows kompas šnekasi su kitu serveriu (pvz. MS SQL).  
