@@ -1,5 +1,5 @@
-Date: 2020-11-26 15:37:00 + 29:36s
-Via: `aruslt`
+Date: 2020-11-26 15:37:00 + 29:36s  
+Via: `aruslt`  
 
 --- citata ---
 Tokiose temose būtinai siūlau Versus principą.  
