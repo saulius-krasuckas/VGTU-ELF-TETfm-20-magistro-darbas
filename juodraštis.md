@@ -1,7 +1,7 @@
 Date: 2020-11-26 15:37:00 + 29:36s  
 Via: `aruslt`  
 
---- citata ---
+--- citata ---  
 Tokiose temose būtinai siūlau Versus principą.  
 
 Pvz. MPTCP vs L3 srauto balansavimas:  
