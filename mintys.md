@@ -104,12 +104,14 @@ Via: arustt
 > - Ištirti TCP ir MPTCP energetinį našumą (energonašumą, angl. Power-efficiency) ir palyginti:  
 >   ar mes naudojame daugiau resursų tam pačiam srauto pralaidumui pasiekti?  
 >
->   (Pvz. 2 korus naudoji kone tiek pat ir gauni daugiau Mbps, t.y. ir aukštesnį energonašumą)  
+>   (Pvz. 2 korus naudoji kone tiek pat ir gauni daugiau Mbps, t.y. aukštesnį energonašumą)  
 >   (Pvz. 2 korai suryja 50% o pralaida išauga tik 20%. Energonašumas krinta)  
 >
 >   (Visiems tyrimams reikėtų matuoti sunaudotus CPU ir RAM resursus: darau tą ir tą, turiu tokį ir tokį efektą)  
 >
-> - apibendrinimas ir palyginimas abiejų protokolų.  
+> - Apibendrinti ir palyginti abu protokolus.  
+>   (Nes MPTCP yra TCP protokolo pratęsimas)
+>
 > (- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
 > (- mptcp proxy for multiprovider aggregation)  
 >
