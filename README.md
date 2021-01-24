@@ -8,7 +8,7 @@ Repozitorija kaupti literatūrai, dokumentacijai, Source kodui.
 
 [Blue Oak Model License](LICENSE.md) (Version 1.0.0) - a [modern alternative](https://writing.kemitchell.com/2019/03/09/Deprecation-Notice.html) to the MIT license.  
 <sup>
-(This short license description comes via [git-learning-game/git-hydra@af2c36a](https://github.com/git-learning-game/git-hydra/commit/af2c36a14505524c513b4e3afc7062130824c0f3#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5))
+(The above short license description comes via [git-learning-game/git-hydra@af2c36a](https://github.com/git-learning-game/git-hydra/commit/af2c36a14505524c513b4e3afc7062130824c0f3#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5))
 </sup>
 
 It is supposed to be a pleasant read for both an IT person and an
