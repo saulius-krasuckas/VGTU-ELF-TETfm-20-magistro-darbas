@@ -112,7 +112,12 @@ Via: arustt
 > - Apibendrinti ir palyginti abu protokolus: TCP ir MPTCP.  
 >   (MPTCP yra TCP protokolo pratęsimas)
 >
-> (- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
+> Papildomas uždavinys:
+>
+> - Ištirti klaidų atsistatymo (perkrovų valdymo? angl. Congestion Control) mechanizmus.
+>
+>   (Bet jis sudėtingas, gilus)  
+>
 > (- mptcp proxy for multiprovider aggregation)  
 >
 > darbuotojas dirba per VPNą, VPNas dirba tik per vieną NICą  
