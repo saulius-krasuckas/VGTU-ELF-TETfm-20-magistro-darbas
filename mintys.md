@@ -89,13 +89,16 @@ Via: arustt
 >
 > - ištirti tcp ir mtcp duomenų perdavimo spartą DCse ir prieigos taškuose (AP).  
 > / dropų nėra, gera pralaida, std situacija + 2 linkai + 3 linkai (arba netgi kelis poruojam su LACP)  
+>
 > - latency / vėlinimui jautrių programų/aplikacijų tyrimas (geiminas, strymingas, VoIP) tarp TCP ir MPTCP (privalumai, trūkumai).  
 > / kokį delėjų gauni tarp siuntimo / gavimo.  
 > / ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  
+>
 > - TCP ir MPTCP power-effieciency tyrimas:  
 > / ar mes naudojame daugiau resursų t.p. srauto pralaidumui pasiekti.  
 > / pvz. 2 korus naudoji ir gauni daugiau Mbps (ir efektyvumą).  
 > / pvz. 2 korai suryja 50% o pralaida išauga tik 20%. (ir pirmu, ir antru tyrimu:CPU. RAM. turiu tokį ir tokį efektą)  
+>
 > - apibendrinimas ir palyginimas abiejų protokolų.  
 > (- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
 > (- mptcp proxy for multiprovider aggregation)  
