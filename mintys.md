@@ -107,7 +107,7 @@ Via: arustt
 >   (Pvz. 2 korus naudoji kone tiek pat ir gauni daugiau Mbps, t.y. aukštesnį energonašumą)  
 >   (Pvz. 2 korai suryja 50% o pralaida išauga tik 20%. Energonašumas krinta)  
 >
->   (Visiems tyrimams reikėtų matuoti sunaudotus CPU ir RAM resursus: darau tą ir tą, turiu tokį ir tokį efektą)  
+>   (Visiems tyrimams reikėtų pamatuoti ir sunaudotus CPU + RAM resursus: darau tą ir tą, turiu tokį ir tokį efektą)  
 >
 > - Apibendrinti ir palyginti abu protokolus: TCP ir MPTCP.  
 >   (MPTCP yra TCP protokolo pratęsimas)
@@ -116,7 +116,7 @@ Via: arustt
 >
 > - Ištirti klaidų atsistatymo (perkrovų valdymo? angl. Congestion Control) mechanizmus.
 >
->   (Bet jis sudėtingas, gilus)  
+>   (Bet čia sudėtinga, gilu)  
 >
 > (- mptcp proxy for multiprovider aggregation)  
 >
