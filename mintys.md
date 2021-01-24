@@ -95,7 +95,7 @@ Via: arustt
 > - Vėlinimui (delsai, angl. Latency) jautrių programų/aplikacijų palyginimas TCP ir MPTCP atvejais (privalumai, trūkumai):
 >   - žaidimų multiplėjeris,
 >   - video strymingas,
->   - VoIP).
+>   - VoIP.
 >
 >   (Kokią delsą gauname tarp siuntimo ir gavimo?)  
 >   (Ar agregavimas per Proxy įneša papildomos delsos?)  
@@ -118,8 +118,19 @@ Via: arustt
 >
 >   (Bet čia sudėtinga, gilu)  
 >
-> (- mptcp proxy for multiprovider aggregation)  
+> Papildoma tyrimo sritis:
+> - MPTCP Proxy panaudojimas keleto tiekėjų agregavimui:  
 >
-> darbuotojas dirba per VPNą, VPNas dirba tik per vieną NICą  
-> nurodai, kad eitų per proxy ir patektų į galutinį tašką, kuriame irgi stovi MPTCP Proxy (bet gal ir nebūtina PRODui).  
-> Išauga mptcp labės kaštai (keli 4g if; arba 5G kaip bekupinis DC linkas šalia optikos).  
+>   Pvz. darbuotojas dirba per VPNą, o VPNas srautą nukreipia tik per vieną NICą.  
+>   Nurodai, kad šis srautas eitų per MPTCP Proxy ir per iškeliautų į galutinį tašką.  
+>   Šiame taške irgi stovi MPTCP Proxy.  
+>   (`saukrs`: manau, kad PRODe tai nebūtina)  
+>   (`arustt`: bet patogesnis matavimas/tyrimas)  
+>
+>   Bet tuomet išauga laboratorinės MPTCP infrastruktūros kaštai:  
+>   naudojame kelių 4G ryšio tiekėjų paslaugas.  
+>
+>   Vienas iš panaudojimo scenarijų hibridinis:  
+>   Pvz. panaudoti 5G (didelį pralaidymą) kaip atsarginį duomenų centro Uplink ryšį (lygiagrečiai optinėms skaiduloms).  
+>   Tinka avarijų atvejams, kai tiekėjas trumpam nutraukia ryšį.  
+>   Galbūt tiktų ir atvejams, kai užkemšamas Uplink pralaidumas.  
