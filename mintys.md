@@ -91,7 +91,10 @@ Via: arustt
 >   (Dropų nėra, gera pralaida, tiriam standartinę situaciją + 2 linkus + 3 linkus)
 >   (Arba netgi kelis poruojam su LACP ir stebime, ką tai pakeis)  
 >
-> - latency / vėlinimui jautrių programų/aplikacijų tyrimas (geiminas, strymingas, VoIP) tarp TCP ir MPTCP (privalumai, trūkumai).  
+> - Vėlinimui (delsai, angl. Latency) jautrių programų/aplikacijų palyginimas TCP ir MPTCP atvejais (privalumai, trūkumai):
+>   - žaidimų multiplėjeris,
+>   - video strymingas,
+>   - VoIP).
 > / kokį delėjų gauni tarp siuntimo / gavimo.  
 > / ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  
 >
