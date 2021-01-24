@@ -87,8 +87,9 @@ Via: arustt
 >
 > Tuomet uždaviniai būtų:  
 >
-> - ištirti tcp ir mtcp duomenų perdavimo spartą DCse ir prieigos taškuose (AP).  
-> / dropų nėra, gera pralaida, std situacija + 2 linkai + 3 linkai (arba netgi kelis poruojam su LACP)  
+> - Ištirti TCP ir MPTCP duomenų perdavimo spartą duomenų centruose ir (pvz.) prieigos taškuose (AP).  
+>   (Dropų nėra, gera pralaida, tiriam standartinę situaciją + 2 linkus + 3 linkus)
+>   (Arba netgi kelis poruojam su LACP ir stebime, ką tai pakeis)  
 >
 > - latency / vėlinimui jautrių programų/aplikacijų tyrimas (geiminas, strymingas, VoIP) tarp TCP ir MPTCP (privalumai, trūkumai).  
 > / kokį delėjų gauni tarp siuntimo / gavimo.  
