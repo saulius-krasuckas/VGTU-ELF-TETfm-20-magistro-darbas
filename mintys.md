@@ -62,16 +62,29 @@ Via: aruslt
 > O visai kitas yra realistinį SQL srautą pamatuoti -- atsiranda visai kitas žavesys!  
 
 ```
-Date: 2021-01-23 10:16:11 + 37:01s  
+Date: 2021-01-23 16:11:00 + 37:01s
 Via: arustt  
 ```
-> 2 dc su skirtingais dviem nicai:
+> Vienuose straipsniuose MPTCP pagerina rezultatus, kituose pablogina.  
+> Straipsniuose dažnai nagrinėjami du DC su skirtingais dviem NICais:  
+> Tikėtina, kad toks setupas ir duoda pablogėjimus / neaiškumus.  
 >
-> legviau: mtcp veikimas, kai naudoji wifi, ethernet  
-> kitas: kai dc tinklas apkrautas arba su praradimu/prastas, tada mptcp gal ir pravers  
-> 20 strymų užmuš kaimyną.  
+> Lengvesnis kelias: MPTCP veikimas, kai naudoji heterogeninius tinklus: Wi-Fi, Ethernet, LTE.  
+> Kitas kelias: kai DC tinklas apkrautas arba su praradimais/prastas, tada MPTCP gal irgi praverčia.  
+> Nors yra ir pavojų: pvz. jei paleisi 20 plačių strymų per DC, užmuši kaimyną.  
 >
-> mptcp tyrimas kintančių parametrų tinkluose (nic apkrautas, imi kitą, su wifi tikrai naudingas vartotojui - pvz. čx lte, ten kur anksčiau nebuvo: pvz. kariams užtikrintas ryšys; SLA) (gerėja, lieka, prastėja) ir DCse.
+> Galimo tikslo pavyzdys:  
+> 
+> Ištirti MPTCP protokolą kintančių parametrų tinkluose ir duomenų centruose:  
+> ar lyginant su TCP ryšys gerėja, išlieka toks pat, ar prastėja?  
+> 
+> Atvejai:  
+> * vienas NIC apkrautas, imi kitą.  
+> * Wi-Fi ryšiui būtų naudingas vartotojui - prisijungi papildomą WLAN IF ir išauga ryšio stabilumas.  
+> * 2-3 skirtingų tiekėjų LTE interfeisai suteiktų ryšį ten, kur anksčiau nebuvo įmanoma, pvz.:  
+>   - IPTV SLA išlaikymui;
+>   - gal net užtikrintas ryšys kariams.
+> 
 > uždavinius:  
 > - ištirti tcp ir mtcp duomenų perdavimo spartą DCse ir prieigos taškuose (AP).  
 > / dropų nėra, gera pralaida, std situacija + 2 linkai + 3 linkai (arba netgi kelis poruojam su LACP)  
