@@ -109,8 +109,8 @@ Via: arustt
 >
 >   (Visiems tyrimams reikėtų matuoti sunaudotus CPU ir RAM resursus: darau tą ir tą, turiu tokį ir tokį efektą)  
 >
-> - Apibendrinti ir palyginti abu protokolus.  
->   (Nes MPTCP yra TCP protokolo pratęsimas)
+> - Apibendrinti ir palyginti abu protokolus: TCP ir MPTCP.  
+>   (MPTCP yra TCP protokolo pratęsimas)
 >
 > (- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
 > (- mptcp proxy for multiprovider aggregation)  
