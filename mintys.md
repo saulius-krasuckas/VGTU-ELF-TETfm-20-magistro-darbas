@@ -101,10 +101,13 @@ Via: arustt
 >   (Ar agregavimas per Proxy įneša papildomos delsos?)  
 >   (Bet šitą būtų galimai sunku pamatuot, jei aplikacijos lygmenyje / keičia jos kodą)
 >
-> - TCP ir MPTCP power-effieciency tyrimas:  
-> / ar mes naudojame daugiau resursų t.p. srauto pralaidumui pasiekti.  
-> / pvz. 2 korus naudoji ir gauni daugiau Mbps (ir efektyvumą).  
-> / pvz. 2 korai suryja 50% o pralaida išauga tik 20%. (ir pirmu, ir antru tyrimu:CPU. RAM. turiu tokį ir tokį efektą)  
+> - Ištirti TCP ir MPTCP energetinį našumą (energonašumą, angl. Power-efficiency) ir palyginti:  
+>   ar mes naudojame daugiau resursų tam pačiam srauto pralaidumui pasiekti?  
+>
+>   (Pvz. 2 korus naudoji kone tiek pat ir gauni daugiau Mbps, t.y. ir aukštesnį energonašumą)  
+>   (Pvz. 2 korai suryja 50% o pralaida išauga tik 20%. Energonašumas krinta)  
+>
+>   (Visiems tyrimams reikėtų matuoti sunaudotus CPU ir RAM resursus: darau tą ir tą, turiu tokį ir tokį efektą)  
 >
 > - apibendrinimas ir palyginimas abiejų protokolų.  
 > (- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
