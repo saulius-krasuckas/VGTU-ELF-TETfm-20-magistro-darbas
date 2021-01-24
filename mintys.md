@@ -96,8 +96,10 @@ Via: arustt
 >   - žaidimų multiplėjeris,
 >   - video strymingas,
 >   - VoIP).
-> / kokį delėjų gauni tarp siuntimo / gavimo.  
-> / ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  	
+>
+>   (Kokią delsą gauname tarp siuntimo ir gavimo?)  
+>   (Ar agregavimas per Proxy įneša papildomos delsos?)  
+>   (Bet šitą būtų galimai sunku pamatuot, jei aplikacijos lygmenyje / keičia jos kodą)
 >
 > - TCP ir MPTCP power-effieciency tyrimas:  
 > / ar mes naudojame daugiau resursų t.p. srauto pralaidumui pasiekti.  
