@@ -133,6 +133,6 @@ Via: arustt
 >
 >   Vienas iš panaudojimo scenarijų hibridinis:  
 >
->   Pvz. panaudoti 5G (didelį pralaidymą) kaip atsarginį duomenų centro Uplink ryšį (lygiagrečiai optinėms skaiduloms).  
+>   Panaudoti 5G (didelį pralaidumą) kaip atsarginį duomenų centro Uplink ryšį (lygiagrečiai optinėms skaiduloms).  
 >   Tinka avarijų atvejams, kai tiekėjas trumpam nutraukia ryšį.  
->   Galbūt tiktų ir atvejams, kai užkemšamas duomenų centro Uplink pralaidumas.  
+>   Galbūt tiktų ir kai užkemšamas duomenų centro Uplink pralaidumas.  
