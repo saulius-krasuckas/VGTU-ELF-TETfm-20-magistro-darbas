@@ -88,6 +88,7 @@ Via: arustt
 > Tuomet uždaviniai būtų:  
 >
 > - Ištirti TCP ir MPTCP duomenų perdavimo spartą duomenų centruose ir (pvz.) prieigos taškuose (AP).  
+>
 >   (Dropų nėra, gera pralaida, tiriam standartinę situaciją + 2 linkus + 3 linkus)  
 >   (Arba netgi kelis poruojam su LACP ir stebime, ką tai pakeis)  
 >
@@ -96,7 +97,7 @@ Via: arustt
 >   - video strymingas,
 >   - VoIP).
 > / kokį delėjų gauni tarp siuntimo / gavimo.  
-> / ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  
+> / ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  	
 >
 > - TCP ir MPTCP power-effieciency tyrimas:  
 > / ar mes naudojame daugiau resursų t.p. srauto pralaidumui pasiekti.  
