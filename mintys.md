@@ -60,3 +60,32 @@ Via: aruslt
 > 
 > Vienas dalykas yra iperfu tarp 2 DC pamatuoti.  
 > O visai kitas yra realistinį SQL srautą pamatuoti -- atsiranda visai kitas žavesys!  
+
+```
+Date: 2021-01-23 10:16:11 + 37:01s  
+Via: arustt  
+```
+2 dc su skirtingais dviem nicai:
+
+legviau: mtcp veikimas, kai naudoji wifi, ethernet  
+kitas: kai dc tinklas apkrautas arba su praradimu/prastas, tada mptcp gal ir pravers  
+20 strymų užmuš kaimyną.  
+
+mptcp tyrimas kintančių parametrų tinkluose (nic apkrautas, imi kitą, su wifi tikrai naudingas vartotojui - pvz. čx lte, ten kur anksčiau nebuvo: pvz. kariams užtikrintas ryšys; SLA) (gerėja, lieka, prastėja) ir DCse.
+uždavinius:  
+- ištirti tcp ir mtcp duomenų perdavimo spartą DCse ir prieigos taškuose (AP).  
+/ dropų nėra, gera pralaida, std situacija + 2 linkai + 3 linkai (arba netgi kelis poruojam su LACP)  
+- latency / vėlinimui jautrių programų/aplikacijų tyrimas (geiminas, strymingas, VoIP) tarp TCP ir MPTCP (privalumai, trūkumai).  
+/ kokį delėjų gauni tarp siuntimo / gavimo.  
+/ ar agregavimas per proxy įneša delėjų (bet šitą galimai bus sunku pamatuot).  
+- TCP ir MPTCP power-effieciency tyrimas:  
+/ ar mes naudojame daugiau resursų t.p. srauto pralaidumui pasiekti.  
+/ pvz. 2 korus naudoji ir gauni daugiau Mbps (ir efektyvumą).  
+/ pvz. 2 korai suryja 50% o pralaida išauga tik 20%. (ir pirmu, ir antru tyrimu:CPU. RAM. turiu tokį ir tokį efektą)  
+- apibendrinimas ir palyginimas abiejų protokolų.  
+(- tiriame klaidų atsistatymo mechanizmus, bet čia sudėtinga)  
+(- mptcp proxy for multiprovider aggregation)  
+
+darbuotojas dirba per VPNą, VPNas dirba tik per vieną NICą  
+nurodai, kad eitų per proxy ir patektų į galutinį tašką, kuriame irgi stovi MPTCP Proxy (bet gal ir nebūtina PRODui).  
+Išauga mptcp labės kaštai (keli 4g if; arba 5G kaip bekupinis DC linkas šalia optikos).  
