@@ -119,18 +119,20 @@ Via: arustt
 >   (Bet čia sudėtinga, gilu)  
 >
 > Papildoma tyrimo sritis:
+>
 > - MPTCP Proxy panaudojimas keleto tiekėjų agregavimui:  
 >
 >   Pvz. darbuotojas dirba per VPNą, o VPNas srautą nukreipia tik per vieną NICą.  
->   Nurodai, kad šis srautas eitų per MPTCP Proxy ir per iškeliautų į galutinį tašką.  
+>   Nurodai, kad šis srautas eitų per MPTCP Proxy ir per iškeliautų į galinį tašką.  
 >   Šiame taške irgi stovi MPTCP Proxy.  
->   (`saukrs`: manau, kad PRODe tai nebūtina)  
->   (`arustt`: bet patogesnis matavimas/tyrimas)  
+>   `saukrs`: "Abejoju, ar būtina statyti MPTCP Proxy galiniame taške. Juk tai Multipoint-to-Point technologija".  
+>   `arustt`: "Tampa patogesnis MPTCP tyrimas / matavimas".  
 >
 >   Bet tuomet išauga laboratorinės MPTCP infrastruktūros kaštai:  
->   naudojame kelių 4G ryšio tiekėjų paslaugas.  
+>   Vienu metu naudojame kelių 4G ryšio tiekėjų paslaugas ir LTE NICus.  
 >
 >   Vienas iš panaudojimo scenarijų hibridinis:  
+>
 >   Pvz. panaudoti 5G (didelį pralaidymą) kaip atsarginį duomenų centro Uplink ryšį (lygiagrečiai optinėms skaiduloms).  
 >   Tinka avarijų atvejams, kai tiekėjas trumpam nutraukia ryšį.  
 >   Galbūt tiktų ir atvejams, kai užkemšamas Uplink pralaidumas.  
