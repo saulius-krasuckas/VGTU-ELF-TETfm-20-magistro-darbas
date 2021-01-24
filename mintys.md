@@ -69,9 +69,9 @@ Via: arustt
 > Straipsniuose dažnai nagrinėjami du DC su skirtingais dviem NICais:  
 > Tikėtina, kad toks setupas ir duoda pablogėjimus / neaiškumus.  
 >
-> Lengvesnis kelias: MPTCP veikimas, kai naudoji heterogeninius tinklus: Wi-Fi, Ethernet, LTE.  
-> Kitas kelias: kai DC tinklas apkrautas arba su praradimais/prastas, tada MPTCP gal irgi praverčia.  
-> Nors yra ir pavojų: pvz. jei paleisi 20 plačių strymų per DC, užmuši kaimyną.  
+> Lengvesnis tyrimo kelias: MPTCP veikimas, kai naudoji heterogeninius tinklus: Wi-Fi, Ethernet, LTE.  
+> Kitas tyrimo kelias: kai DC tinklas apkrautas arba su praradimais/prastas, tada MPTCP gal irgi praverčia.  
+> Nors atsiranda ir pavojų: pvz. jei paleisi 20 plačių strymų per DC, užmuši kaimyną.  
 >
 > Galimo tikslo pavyzdys:  
 > 
@@ -84,8 +84,9 @@ Via: arustt
 > * 2-3 skirtingų tiekėjų LTE interfeisai suteiktų ryšį ten, kur anksčiau nebuvo įmanoma, pvz.:  
 >   - IPTV SLA išlaikymui;
 >   - gal net užtikrintas ryšys kariams.
-> 
-> uždavinius:  
+>
+> Tuomet uždaviniai būtų:  
+>
 > - ištirti tcp ir mtcp duomenų perdavimo spartą DCse ir prieigos taškuose (AP).  
 > / dropų nėra, gera pralaida, std situacija + 2 linkai + 3 linkai (arba netgi kelis poruojam su LACP)  
 > - latency / vėlinimui jautrių programų/aplikacijų tyrimas (geiminas, strymingas, VoIP) tarp TCP ir MPTCP (privalumai, trūkumai).  
