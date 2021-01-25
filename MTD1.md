@@ -1,7 +1,7 @@
 ### Planuojamas magistrinio darbo tikslas:
 
-Ištirti literatūroje rečiau aprašomus MPTCP protokolo naudojimo scenarijus (Duomenų centruose).  
-Palyginti su populiariais naudojimo scenarijais (Wi-Fi + LTE, DSL + LTE).
+Ištirti literatūroje rečiau aprašomus MPTCP protokolo naudojimo scenarijus (t. y. duomenų centruose).  
+Palyginti su populiariais naudojimo scenarijais (pvz. Wi-Fi + LTE, DSL + LTE).  
 
 ### Į tikslą vedantys uždaviniai:
 
