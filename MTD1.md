@@ -40,7 +40,7 @@ Palyginti su populiariais naudojimo scenarijais (pvz. Wi-Fi + LTE, DSL + LTE).
 
 Papildomas uždavinys būtų:
 
-* Ištirti galimybę panaudotiu MPTCP Proxy keleto tiekėjų agredavimui.
+* Ištirti galimybę panaudotiu MPTCP Proxy keleto tiekėjų agregavimui.
 
   Tai arba kelių LTE tiekėjų paslaugų apjungimas, arba pvz. duomenų Uplink optinio kanalo apjungimas su 5G.  
   Pirmasis praverstų VPN ryšiams, kurie įprastai veikia tik vienu tinklo interfeisu.  
