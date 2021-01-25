@@ -45,6 +45,6 @@ Papildomas uždavinys būtų:
   Tai arba kelių LTE tiekėjų paslaugų apjungimas, arba pvz. duomenų Uplink optinio kanalo apjungimas su 5G.  
   Pirmasis praverstų VPN ryšiams, kurie įprastai veikia tik vienu tinklo interfeisu.  
   Tam reikėtų nukreipti srautą į MPTCP Proxy.  
-  Antrasis aktualus avarinėms situacijosm, kai tiekėjas trumpam nutraukia ryšį.  
+  Antrasis aktualus avarinėse situacijose, kai tiekėjas trumpam nutraukia ryšį.  
   Galbūt net ir kai užkemšamas duomenų centro Uplink pralaidumas.  
   Toks uždavinys labiau pakeltų laboratorinės infrastruktūros kaštus.  
