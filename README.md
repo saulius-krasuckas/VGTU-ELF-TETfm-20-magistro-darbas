@@ -1,6 +1,7 @@
 # Multipath TCP tyrimas duomenų centruose
 Sauliaus Krasucko baigiamasis magistro darbas. VGTU Elektronikos fakultetas, grupė TETfm-20  
 Darbo vadovas: Arūnas Statkus, Vilnius TECH  
+Darbo konsultantas: Arūna Šaltis, Vilnius TECH
 
 Repozitorija kaupti literatūrai, dokumentacijai, Source kodui.
 
