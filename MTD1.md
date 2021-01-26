@@ -1,7 +1,6 @@
 ### Planuojamas magistrinio darbo tikslas:
 
-Ištirti mažiau paplitusius MPTCP naudojimo scenarijus (duomenų centruose) ir 
-palyginti su populiariais tyrimais (hibridiniuose tinkluose, pvz. Wi-Fi + LTE, DSL + LTE).  
+Ištirti mažiau paplitusius MPTCP naudojimo scenarijus (duomenų centruose).  
 
 
 ### Į tikslą vedantys uždaviniai:
@@ -13,7 +12,7 @@ palyginti su populiariais tyrimais (hibridiniuose tinkluose, pvz. Wi-Fi + LTE, D
   Tuomet į tyrimą įtraukiami 2 NIC, tuomet 3 NIC, galiausiai 4 NIC.  
   (Pagal galimybes panaudojant LACP ar kitą agregavimą.)  
   (Pagal galimybes palyginti protokolo elgseną duomenų centruose su elgsena kintančių parametrų tinkluose.)  
-  Naudojami tiek sintetiniai, tiek aplikaciniai testai (pvz. SQL servisas keliose skirtingose OS)
+  Naudojami tiek sintetiniai, tiek aplikaciniai testai (pvz. SQL servisas keliose skirtingose OS).  
 
 * Vėlinimui (delsai) jautrių aplikacijų elgsenos palyginimas TCP ir MPTCP atvejais.  
 
