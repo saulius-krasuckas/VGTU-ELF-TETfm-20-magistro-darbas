@@ -1,7 +1,7 @@
 ### Planuojamas magistrinio darbo tikslas:
 
-Ištirti literatūroje rečiau aprašomus MPTCP protokolo naudojimo scenarijus (t. y. duomenų centruose).  
-Palyginti su populiariais naudojimo scenarijais (pvz. Wi-Fi + LTE, DSL + LTE).  
+Ištirti mažiau paplitusius MPTCP naudojimo scenarijus (duomenų centruose) ir 
+palyginti su populiariais tyrimais (hibridiniuose tinkluose, pvz. Wi-Fi + LTE, DSL + LTE).  
 
 
 ### Į tikslą vedantys uždaviniai:
@@ -13,6 +13,7 @@ Palyginti su populiariais naudojimo scenarijais (pvz. Wi-Fi + LTE, DSL + LTE).
   Tuomet į tyrimą įtraukiami 2 NIC, tuomet 3 NIC, galiausiai 4 NIC.  
   (Pagal galimybes panaudojant LACP ar kitą agregavimą.)  
   (Pagal galimybes palyginti protokolo elgseną duomenų centruose su elgsena kintančių parametrų tinkluose.)  
+  Naudojami tiek sintetiniai, tiek aplikaciniai testai (pvz. SQL servisas keliose skirtingose OS)
 
 * Vėlinimui (delsai) jautrių aplikacijų elgsenos palyginimas TCP ir MPTCP atvejais.  
 
@@ -37,11 +38,11 @@ Palyginti su populiariais naudojimo scenarijais (pvz. Wi-Fi + LTE, DSL + LTE).
   Ar Virtualių mašinų (VM) CPU laiko Scheduling algoritmai / niuansai irgi paveiktų pralaidą?  
 
 * Apibendrinti ir palyginti abu protokolus: TCP ir MPTCP.  
-  (kadangi MPTCP yra TCP protokolo tąsa, suderinamas tinklo lygmenyje)  
+  (kadangi MPTCP yra TCP protokolo tąsa ir yra suderinamas transporto lygmenyje)  
 
 Papildomas uždavinys būtų:
 
-* Ištirti galimybę panaudotiu MPTCP Proxy keleto tiekėjų agregavimui.
+* Ištirti galimybę panaudoti MPTCP Proxy keleto tiekėjų agregavimui.
 
   Tai arba kelių LTE tiekėjų paslaugų apjungimas, arba pvz. duomenų Uplink optinio kanalo apjungimas su 5G.  
   Pirmasis praverstų VPN ryšiams, kurie įprastai veikia tik vienu tinklo interfeisu.  
