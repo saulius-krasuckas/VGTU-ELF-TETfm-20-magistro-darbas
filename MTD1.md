@@ -87,6 +87,10 @@ MPTCP:
 
 ![0](https://image.slidesharecdn.com/multipath-tcp-tutorial-cloudnet-121129033805-phpapp02/95/multipath-tcp-141-638.jpg)
 
+Transporto mechanizmas yra suderinamas su klasikiniu TCP ir atrodo taip:
+
+![4](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/DifferenceTCP_MPTCP-en.png/800px-DifferenceTCP_MPTCP-en.png)
+
 Duomenų centre yra:
 
 ![1](http://blog.multipath-tcp.org/blog/html/_images/dc-1.png)
@@ -99,9 +103,6 @@ Pralaida TCP ir MPTCP atvejais:
 
 ![3](http://blog.multipath-tcp.org/blog/html/_images/dc-4.png)
 
-Transporto mechanizmas yra suderinamas su klasikiniu TCP ir atrodo taip:
-
-![4](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/DifferenceTCP_MPTCP-en.png/800px-DifferenceTCP_MPTCP-en.png)
 
 - Išdėstyti pagrindinius iššūkius užtikrinant MPTCP veikimą (angl.: Path Scheduling, DC Network Load Control, Aggressive Middle Boxes).  
 
