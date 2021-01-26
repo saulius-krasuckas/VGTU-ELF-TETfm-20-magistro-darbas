@@ -36,7 +36,7 @@ Ištirti mažiau paplitusius MPTCP naudojimo scenarijus (duomenų centruose).
   - Dėl dešimtis kartų išaugančios virtualios pralaidos tikėtini neigiami reiškiniai su CPU resursų išnaudojimu: ar tikrai taip?  
   - Ar Virtualių mašinų (VM) CPU laiko Scheduling algoritmai / niuansai irgi paveiktų pralaidą?  
 
-* Apibendrinti ir palyginti abu protokolus: TCP ir MPTCP.  
+* Apibendrinti tyrimą ir palyginti abu protokolus: TCP ir MPTCP.  
   (kadangi MPTCP yra TCP protokolo tąsa ir yra suderinamas transporto lygmenyje)  
 
 Papildomas uždavinys būtų:
