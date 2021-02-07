@@ -116,6 +116,7 @@ Nagrinėjau MPTCP palaikymo aprašymus skirtinguose OS.
 Panašu, jog iš atvirojo kodo sistemų kol kas palaiko tik Linux ir FreeBSD.  
 Pastaroji naudoja šiek tiek senesnę steko versiją; be to, ji nebuvo įtraukta į pagrindinį (Mainline) branduolį.  
 
+
 <div style="page-break-after: always;"></div>
 <div class="pagebreak"></div>
 
@@ -241,5 +242,6 @@ https://doi.org/10.1109/INCOS45849.2019.8951365
     Google Scholar H5-index: --  
     Guide2Research Impact Score: --  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODg1MjE2MCwtMTEyODE4OTM2M119
+eyJoaXN0b3J5IjpbMTI3MzE0Njk2MiwxNTY4ODUyMTYwLC0xMT
+I4MTg5MzYzXX0=
 -->
