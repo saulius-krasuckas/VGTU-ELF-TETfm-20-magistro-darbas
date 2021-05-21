@@ -63,7 +63,7 @@ Via: aruslt
 > Vienas dalykas yra iperfu tarp 2 DC pamatuoti.  
 > O visai kitas yra realistinį SQL srautą pamatuoti -- atsiranda visai kitas žavesys!  
 
-### `aruslt`
+### `arustt`
 
 ```
 Date: 2021-01-23 16:11:00 + 37:01s
