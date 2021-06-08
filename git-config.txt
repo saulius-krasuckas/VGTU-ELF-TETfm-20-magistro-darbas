@@ -1,1 +1,7 @@
-
+remote.origin.url=https://github.com/VGTU-ELF/TETfm-20
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+remote.origin.pushurl=https://saulius-krasuckas@github.com/VGTU-ELF/TETfm-20
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+user.name=Saulius Krasuckas
+user.email=saulius.krasuckas@stud.vgtu.lt
