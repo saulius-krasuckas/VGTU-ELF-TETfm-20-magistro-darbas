@@ -1,5 +1,5 @@
 * Energonašumas:
-  * `eMTCP`  
+  * `eMTCP` – energy-aware MPTCP  
     A Traffic Burstiness-based Offload Scheme for Energy Efficiency Deliveries in Heterogeneous Wireless Networks  
     https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.702.3596&rep=rep1&type=pdf
   * angl. _Power efficiency_ vs _Energy efficiency_:  
