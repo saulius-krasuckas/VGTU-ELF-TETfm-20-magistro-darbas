@@ -22,7 +22,7 @@ Ištirti mažiau paplitusius MPTCP naudojimo scenarijus (duomenų centruose).
     (Pastarasis pagal galimybes: galimai būtų sunku pamatuoti aplikacijos lygmeniu / jei tektų keisti jos kodą.)  
   - Kokie MPTCP naudojimo privalumai ir trūkumai?  
 
-* Ištirti TCP ir MPTCP energonašumą (angl. Power-efficiency) ir palyginti,
+* Ištirti TCP ir MPTCP energonašumą (angl. Energy-efficiency) ir palyginti,
   kaip naudojant MPTCP keičiasi reikalaujami skaičiavimo resursai.  
 
   - Vienas atvejis: CPU du branduolius naudojami vos keliais procentais daugiau, o pralaida išauga kartais.  
