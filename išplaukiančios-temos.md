@@ -6,3 +6,10 @@
     https://itpeernetwork.intel.com/power-and-energy-efficiency-double-your-benefit/  
     > Power efficiency is about doing more within a fixed capability  
     > Energy Efficiency is about “making every kWh count”
+---
+### Kitos mintys
+
+* Pritaikomumas CDNams:  
+ Jon Crowcroft  
+ Network Architecture (R02) | IP Multipath – Path Selection&CC  
+ https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=5
