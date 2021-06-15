@@ -10,6 +10,10 @@
 ### Kitos mintys
 
 * Pritaikomumas CDNams:  
- Jon Crowcroft  
- Network Architecture (R02) | IP Multipath – Path Selection&CC  
- https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=5
+  * Network Architecture (R02) | IP Multipath – Path Selection&CC  
+    Jon Crowcroft  
+    https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  
+    > * IP or Application Layer
+    >   * CDN, especially P2P (Torrent or Storm)
+    >     already effectively multipath at App
+    >   * Current IP routing mainly only corner cases
