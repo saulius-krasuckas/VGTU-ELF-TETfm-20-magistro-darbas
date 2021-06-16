@@ -33,8 +33,8 @@
     > 
  
   * https://slideplayer.com/slide/17007643/  
-    `TODO` https://arxiv.org/pdf/1707.00322.pdf
-    `TODO` https://github.com/mkheirkhah/amp
+    `TODO` https://arxiv.org/pdf/1707.00322.pdf  
+    `TODO` https://github.com/mkheirkhah/amp  
     Išsprendžia:
     >
     > ECN-based multipath schemes seem to provide a good balance between the latency-throughput trade-off  
