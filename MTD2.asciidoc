@@ -22,7 +22,9 @@ ____
 *** DCell
 *** BCube
 *** MDCube
-** **?**
+** Ieškau balanso tarp realistiškumo ir prieinamumo:
+*** fiziniam modeliui
+*** modeliui su virtualiomis mašinomis
 
 * **Ką išsprendžia MPTCP ir kokie jo trūkumai?** +
   Juos turbūt ir verta tirti
