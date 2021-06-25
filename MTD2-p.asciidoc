@@ -1,0 +1,39 @@
+1, Esu vis dar strategavimo fazėje – daug galimų tyrimo krypčių
+(Statkus, Šaltis, aš pats)
+
+2, Pasirinkti DCN tipą:
+
+* Tree-based
+** Basic Tree
+** Fat Tree
+** Clos Tree
+** Spine-Leaf
+
+* Recursive
+** DCell
+** BCube
+** MDCube
+
+* Kiti, labiau aktualūs Telco-NG architektūrai (Ericsson)
+
+* Ieškau balanso tarp realistiškumo ir prieinamumo:
+** fiziniam modeliui
+** modeliui su virtualiomis mašinomis
+
+3, preliminari eiga:
+
+* OpenMPTCP routerio kėlimas, pirmi testai
+* Srautų inspekcija
+* Perėjimas prie CentOS 8.3 (DC-grade distribucijos)
+* Perėjimas prie VBox
+* Perėjimas prie KVM
+* Gal perėjimas prie Docker ?
+* Statinės maršrutų konfiguracijos 
+* Path Manager įjungimas į scenarijus
+
+* Linux legacy app perjungimas naudoti IPPROTO_MPTCP ?
+* Per IPv6 ?
+* Proxy atvejų paieška, paskui tyrimai ?
+* VM multi NIC setups for Windows ? https://github.com/multipath-tcp/mptcp/issues/76
+* Ištirti TCP + MPTCP sugyvenamumą bendrose ryšio linijose?
+* Patyrinėti MPTCP saugumo (atakų aptikimo) aspektą ?
