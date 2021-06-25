@@ -83,7 +83,7 @@ ____
 +
 --
 ____
-> ECN-based multipath schemes seem to provide a good balance between the latency-throughput trade-off  +
+> ECN-based multipath schemes seem to provide a good balance between **the latency-throughput trade-off**  +
 ____
 --
 +
@@ -141,7 +141,7 @@ ____
 +
 --
 ____
-> just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. [...] MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
+> just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to **hand over traffic** from Wi-Fi to cellular, **without disrupting the application**.
 ____
 --
 +
@@ -151,7 +151,7 @@ ____
 +
 --
 ____
-> just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. This is especially important as available bandwidth for wireless connections vary over time and while in motion. And because MPTCP is part of the networking stack, it is transparent to the application. MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
+> MPTCP also dramatically **reduces the number of network collisions**, which is why you never achieve the full speed of any connection.
 ____
 --
 
@@ -171,6 +171,10 @@ ____
 > Energy Efficiency is about “making every kWh count”
 ____
 --
+
+<<<
+---
+=== Santykis su _Legacy_ aplikacijomis:
 
 * Ar DC tyrimams praverstų **MPTCP Proxy** naudojimas?  +
 Ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)
@@ -192,37 +196,75 @@ ____
 ____
 --
 
+* STAP panaudojimas `IPPROTO_MPTCP` įjungimui kuriant soketus
+
 <<<
 ---
 ### Kitos mintys
 
 * Pritaikomumas CDNams:  
-** Network Architecture (R02) | IP Multipath – Path Selection&CC  
-    Jon Crowcroft  
-    https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  
-    > * IP or Application Layer
-    >   * CDN, especially P2P (Torrent or Storm)
-    >     already effectively multipath at App
-    >   * Current IP routing mainly only corner cases
+** Network Architecture (R02) | IP Multipath – Path Selection&CC  +
+    Jon Crowcroft  +
+    https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  +
++
+--
+____
+> * IP or Application Layer
+>   * CDN, especially P2P (Torrent or Storm)
+>     already effectively multipath at App
+>   * Current IP routing mainly only corner cases
+____
+--
 
 * WireGuard tunelio panaudojimas MPTCP srauto perdavimui per tuos DC _Middlebox_ mazgus, kurie blokuoja MPTCP žymes/laukus, bet praleidžia UDP.
 
-* Ar DC reikalingas Path menedžeris (dinaminis Routing Table valdymas)?  
-** https://dial.uclouvain.be/memoire/ucl/fr/object/thesis%3A366/datastream/PDF_01/view
-    > Simply installing a new Multipath TCP-ready kernel is not enough if you want to use multiple network interfaces at the same time. Indeed, you need to configure routing tables as described on the Multipath TCP’s website [8]
+* Ar DC reikalingas _**Path**_ menedžeris (dinaminis _Routing Table_ valdymas)?  
+** https://dial.uclouvain.be/memoire/ucl/fr/object/thesis%3A366/datastream/PDF_01/view  +
++
+--
+____
+> Simply installing a new Multipath TCP-ready kernel is not enough if you want to use multiple network interfaces at the same time. Indeed, you need to configure routing tables as described on the Multipath TCP’s website [8]
+____
+--
+
 ** http://multipath-tcp.org/pmwiki.php/Users/ConfigureRouting
-    > Automatic configuration with "Multihomed-Routing"
-    > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
-** https://github.com/kristrev/multihomed-routing  
-*** Ar veikia su `netplan`?
++
+--
+____
+> Automatic configuration with "Multihomed-Routing"
+> Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
+____
+--
+
+** Vienas iš įrankų:  +
+   https://github.com/kristrev/multihomed-routing  +
+*** Ar jis veikia su `netplan`?
 
 * Esu numatęs naudoti RHEL 8.3 arba 8.4:
 ** https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
-    > Multipath TCP (MPTCP) extends traditional TCP to allow reliable end-to-end delivery over multiple simultaneous TCP paths, and is coming as a tech preview on Red Hat Enterprise Linux 8.3. This is the first of two articles for users who want to practice with the new MPTCP functionality on a live system. In this first part, we show you how to enable the protocol in the kernel and let client and server applications use the MPTCP sockets. Then, we run diagnostics on the kernel in a sample test network, where endpoints are using a single subflow.
++
+--
+____
+> Multipath TCP (MPTCP) extends traditional TCP to allow reliable end-to-end delivery over multiple simultaneous TCP paths, and is coming as a **tech preview on Red Hat Enterprise Linux 8.3**. This is the first of two articles for users who want to practice with the new MPTCP functionality on a live system. In this first part, we show you how to enable the protocol in the kernel and let client and server applications use the MPTCP sockets. Then, we run diagnostics on the kernel in a sample test network, where endpoints are using a single subflow.
+____
+--
+
 ** https://www.phoronix.com/forums/forum/software/distributions/1201614-red-hat-bringing-multipath-tcp-to-rhel-8-3-as-a-tech-preview#post1201689
-    > Pretty sure RH's interest in the backport is for their customers large DC solutions, where 100/200GbE NICs are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
++
+--
+____
+> Pretty sure RH's interest in the backport is for their customers **large DC solutions**, where **100/200GbE NICs** are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
+____
+--
+
 ** https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
-    > **27. Getting started with Multipath TCP**
++
+--
+____
+> **27. Getting started with Multipath TCP**
+____
+--
+
 
 <<<
 ---
