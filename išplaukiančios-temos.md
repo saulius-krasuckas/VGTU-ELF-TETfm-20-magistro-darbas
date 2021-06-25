@@ -110,4 +110,4 @@
     >     already effectively multipath at App
     >   * Current IP routing mainly only corner cases
 
-* 
+* WireGuard tunelio panaudojimas MPTCP srauto perdavimui per tuos DC _Middlebox_ mazgus, kurie blokuoja MPTCP žymes/laukus, bet praleidžia UDP.
