@@ -1,4 +1,4 @@
-==== DCN tipai
+=== DCN tipai
 
 * Kokie yra DCN (Data Center Networks) tipai?
 ** https://www.diva-portal.org/smash/get/diva2:1164941/FULLTEXT01.pdf#page=10
@@ -157,7 +157,7 @@ ____
 ** https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
     > **27. Getting started with Multipath TCP**
 
-==== MPTCP protokolo saugumo klausimai
+=== MPTCP protokolo saugumo klausimai
 
 * **cross-path data fragmentation**: +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
