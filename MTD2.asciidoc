@@ -156,3 +156,38 @@ ____
     > Pretty sure RH's interest in the backport is for their customers large DC solutions, where 100/200GbE NICs are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
 ** https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
     > **27. Getting started with Multipath TCP**
+
+==== MPTCP protokolo saugumo klausimai
+
+* **cross-path data fragmentation**: +
+  https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
+____
+Multipath routing causes cross-path data fragmentation. From a security perspective that challenges in-line security solutions (e.g., firewalls, IDSs, and malware scanners) which only "see" one path's traffic. Without being able to see all paths, these devices may miss activity that they're meant to be monitoring for. These intermediary devices act a bit like an airport body scanner for the passengers wanting to enter the airport gate area. 
+____
+
+* **the old and the new approaches**
+____
+So does that make Firewalls useless?  No, of course not. Perimeter and inline security solutions, like Firewalls and Intrusion Detection Systems, are not dead.  They have and always will perform important duties for protecting perimeters.  Perimeters are more numerous and now include an organization's cloud infrastructure. But, security approaches like Zero Trust and the Cloud Security Alliance's https://cloudsecurityalliance.org/research/working-groups/software-defined-perimeter-and-zero-trust/[Software Defined Perimeter (SDP)] provide a new approach that applies to the world where end-user devices are everywhere and not restricted to office only use and applications that are also everywhere, ranging from on-premise to private cloud and public cloud.
+____
+
+* **Security Evaluation of Multipath TCP** +
+  https://www.diva-portal.org/smash/get/diva2:934158/FULLTEXT01.pdf
+____
+The new protocol has been carefully crafted to meet the required security goals, but due to its
+very nature, it inevitably changes how data is transferred across the networks, drastically affecting
+the way information can be accessed and inspected. From this perspective, working on the security
+evaluation of MPTCP has important implications regarding ethical concerns. By splitting a logical
+flow of data into different subflows with no predictable scheduling pattern, perhaps involving
+different ISPs for different subflows, would make it so much harder to inspect and eavesdrop useful
+information regarding the ongoing connections by acting within the core of the Internet. Despite
+this might be seen as a potential benefit for clients aiming at achieving full anonymization in
+the network, many current intrusion mechanisms and similar technologies might fail under these
+new circumstances, perhaps causing even more security threats overall.
+
+Overall, MPTCP can drastically change how privacy is handled within the Internet, while the
+security aspects should remain unchanged, if not improved, with respect to current TCP. Moreover,
+MPTCP would bring a positive impact for the environment due to a better resources exploitation,
+if deployed at large scale. Finally, the new protocol would allow to achieve a series of benefits that
+could drastically improve user experience for data transferring in the Internet as well as within
+data centers, i.e. wherever TCP is currently adopted
+____
