@@ -134,4 +134,4 @@
   * https://www.phoronix.com/forums/forum/software/distributions/1201614-red-hat-bringing-multipath-tcp-to-rhel-8-3-as-a-tech-preview#post1201689
     > Pretty sure RH's interest in the backport is for their customers large DC solutions, where 100/200GbE NICs are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
   * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
-    > 27. Getting started with Multipath TCP
+    > **27. Getting started with Multipath TCP**
