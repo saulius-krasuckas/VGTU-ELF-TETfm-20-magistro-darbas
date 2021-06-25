@@ -1,14 +1,32 @@
+==== DCN tipai
+
 * Kokie yra DCN (Data Center Networks) tipai?
 ** https://www.diva-portal.org/smash/get/diva2:1164941/FULLTEXT01.pdf#page=10
-    > 2 Overview of Data Center Architectures  
-    > 2.1 Data Center Network Topologies  
-    > 3 Data Center Networking  
-    > 3.1 Data Center Network  
-    > 3.2 Data Center Networking  
-** Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
++
+--
+____
+2 Overview of Data Center Architectures +
+2.1 Data Center Network Topologies +
+3 Data Center Networking +
+3.1 Data Center Network +
+3.2 Data Center Networking +
+____
+--
++
+* Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
+** Tree-based
+*** Basic Tree
+*** Fat Tree
+*** Clos Tree
+** Recursive
+*** DCell
+*** BCube
+*** MDCube
+** **?**
 
-* Ką išsprendžia MPTCP ir kokie jo trūkumai?  
-  (Juos turbūt ir verta tirti)
+* **Ką išsprendžia MPTCP ir kokie jo trūkumai?** +
+  Juos turbūt ir verta tirti
+  
 ** https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-020-00160-3  
     Išsprendžia:
     > As the de facto load balancing scheme in data center, Equal Cost Multipath (ECMP) [3] randomly sends each flow to one of the parallel paths by hash function. Though ECMP is very simple, it suffers from well-known performance problems such as hash collisions and low link utilization. Random Packet Spraying (RPS) [4] is a packet-level load balancing scheme that sprays each packet to a random path to obtain high link utilization, while also leading to packet reordering and throughput loss. Compared with the flow-level and packet-level load balancing schemes, MultiPath TCP (MPTCP) uses parallel subflows as the rerouting granularity to achieve better tradeoff in minimizing packet reordering and increasing link utilization [5].  
