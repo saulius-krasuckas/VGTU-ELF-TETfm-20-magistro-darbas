@@ -5,7 +5,16 @@
     > 3 Data Center Networking  
     > 3.1 Data Center Network  
     > 3.2 Data Center Networking  
-  * Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
+
+* Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
+  * Tree-based
+    * Basic Tree
+    * Fat Tree
+    * Clos Tree
+  * Recursive
+    * DCell
+    * BCube
+    * MDCube
 
 * Ką išsprendžia MPTCP ir kokie jo trūkumai?  
   (Juos turbūt ir verta tirti)
