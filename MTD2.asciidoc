@@ -12,7 +12,9 @@ ____
 3.2 Data Center Networking +
 ____
 --
-+
+
+image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5dd-11eb-8824-a657c3d0ad83.png[]
+
 * Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
 ** Tree-based
 *** Basic Tree
@@ -40,6 +42,7 @@ ____
 > As the de facto load balancing scheme in data center, Equal Cost Multipath (ECMP) [3] randomly sends each flow to one of the parallel paths by hash function. Though ECMP is very simple, it suffers from well-known performance problems such as hash collisions and low link utilization. Random Packet Spraying (RPS) [4] is a packet-level load balancing scheme that sprays each packet to a random path to obtain high link utilization, while also leading to packet reordering and throughput loss. Compared with the flow-level and packet-level load balancing schemes, MultiPath TCP (MPTCP) uses parallel subflows as the rerouting granularity to achieve better tradeoff in minimizing packet reordering and increasing link utilization [5].
 ____
 --
+image::https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13677-020-00160-3/MediaObjects/13677_2020_160_Fig1_HTML.png?as=webp[]
 +
 Trūkumai: 
 +
@@ -100,6 +103,8 @@ ____
 > * Last Hop Unfairness (LHU)  +
 >   We are reporting it for the first time
 
+image::https://user-images.githubusercontent.com/74717106/123442566-abb22680-d5dd-11eb-81ac-90a63745836d.png[]
+
 > **Problem 1: Incast**  +
 >  +
 > * MPTCP and its ECN-capable variants are not robust against the Incast problem… +
@@ -111,6 +116,8 @@ ____
 >     As a result the switch buffer can easily overflow.  +
 >     +
 >     Which implies higher chance of RTO in each subflow especially when the congestion window is small (less than 10 packets).
+
+image::https://user-images.githubusercontent.com/74717106/123442376-7d344b80-d5dd-11eb-96f8-8b7cc66ddbe3.png[]
 
 > **Problem 2: Last Hop Unfairness**  +
 >  +
@@ -186,6 +193,8 @@ ____
 > Fig. 1. Creation of the split TCP-MPTCP connection, after insertion of the MPTCP Proxy in between the communication ends.
 ____
 --
++
+image::https://user-images.githubusercontent.com/74717106/123441981-1e6ed200-d5dd-11eb-8a93-91342354d422.png[]
 
 ** https://spyff.github.io/mptcp/2017/08/27/transparent-mptcp-proxy/
 +
@@ -194,6 +203,8 @@ ____
 > **Multipath Wi-Fi bridging with transparent MPTCP proxy on LEDE**
 ____
 --
++
+image::https://raw.githubusercontent.com/spyff/draw.io/master/GSoC2017_final_topology.jpg[]
 
 * STAP panaudojimas `IPPROTO_MPTCP` įjungimui kuriant soketus
 
@@ -231,15 +242,38 @@ ____
 --
 ____
 > Automatic configuration with "Multihomed-Routing"
-> Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
+
+  mptcp-kernel:~# ip rule show
+  0:      from all lookup local
+  32764:  from 10.1.2.2 lookup 2
+  32765:  from 10.1.1.2 lookup 1
+  32766:  from all lookup main
+  32767:  from all lookup default
+ #
+  mptcp-kernel:~# ip route
+  10.1.1.0/24 dev eth0  proto kernel  scope link  src 10.1.1.2
+  10.1.2.0/24 dev eth1  proto kernel  scope link  src 10.1.2.2
+  default via 10.1.1.1 dev eth0
+ #
+  mptcp-kernel:~# ip route show table 1
+  10.1.1.0/24 dev eth0  scope link
+  default via 10.1.1.1 dev eth0
+ #
+  mptcp-kernel:~# ip route show table 2
+  10.1.2.0/24 dev eth1  scope link
+  default via 10.1.2.1 dev eth1
 ____
 --
++
+
+> > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
+
 
 ** Vienas iš įrankų:  +
    https://github.com/kristrev/multihomed-routing  +
 *** Ar jis veikia su `netplan`?
 
-* Esu numatęs naudoti RHEL 8.3 arba 8.4:
+* Esu numatęs naudoti **RHEL 8.3** arba **8.4**:
 ** https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
 +
 --
@@ -270,17 +304,25 @@ ____
 
 * **Cross-path data fragmentation**: +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
++
+--
 ____
 > Multipath routing causes cross-path data fragmentation. From a security perspective that challenges in-line security solutions (e.g., firewalls, IDSs, and malware scanners) which only "see" one path's traffic. Without being able to see all paths, these devices may miss activity that they're meant to be monitoring for. These intermediary devices act a bit like an airport body scanner for the passengers wanting to enter the airport gate area. 
 ____
+--
 
 * **Senas ir naujas požiūris į TCP sesijos duomenų išlygiagretinimą**
++
+--
 ____
 > So does that make Firewalls useless?  No, of course not. Perimeter and inline security solutions, like Firewalls and Intrusion Detection Systems, are not dead.  They have and always will perform important duties for protecting perimeters.  Perimeters are more numerous and now include an organization's cloud infrastructure. But, security approaches like Zero Trust and the Cloud Security Alliance's https://cloudsecurityalliance.org/research/working-groups/software-defined-perimeter-and-zero-trust/[Software Defined Perimeter (SDP)] provide a new approach that applies to the world where end-user devices are everywhere and not restricted to office only use and applications that are also everywhere, ranging from on-premise to private cloud and public cloud.
 ____
+--
 
 * **Security Evaluation of Multipath TCP** +
   https://www.diva-portal.org/smash/get/diva2:934158/FULLTEXT01.pdf
++
+--
 ____
 > The new protocol has been carefully crafted to meet the required security goals, but due to its
 very nature, it inevitably changes how data is transferred across the networks, drastically affecting
@@ -300,3 +342,4 @@ if deployed at large scale. Finally, the new protocol would allow to achieve a s
 could drastically improve user experience for data transferring in the Internet as well as within
 data centers, i.e. wherever TCP is currently adopted
 ____
+--
