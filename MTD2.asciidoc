@@ -146,29 +146,53 @@ ____
 --
 +
 
-* Gal verta ištirti _Network Collision_ pasikeitimus įjungus MPTCP?  
+* Gal verta ištirti _Network Collision_ pasikeitimus įjungus MPTCP?  +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
-  > just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. This is especially important as available bandwidth for wireless connections vary over time and while in motion. And because MPTCP is part of the networking stack, it is transparent to the application. MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
++
+--
+____
+> just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. This is especially important as available bandwidth for wireless connections vary over time and while in motion. And because MPTCP is part of the networking stack, it is transparent to the application. MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
+____
+--
 
 
-* Energonašumas:
-** `eMTCP` – energy-aware MPTCP  
+<<<
+---
+=== Energonašumas:
+* `eMTCP` – energy-aware MPTCP  +
     A Traffic Burstiness-based Offload Scheme for Energy Efficiency Deliveries in Heterogeneous Wireless Networks  
     https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.702.3596&rep=rep1&type=pdf
-** angl. _Power efficiency_ vs _Energy efficiency_:  
-    https://itpeernetwork.intel.com/power-and-energy-efficiency-double-your-benefit/  
-    > Power efficiency is about doing more within a fixed capability  
-    > Energy Efficiency is about “making every kWh count”
+* Kurį renkamės: angl. _**Power** efficiency_ vs _**Energy** efficiency_ ?  +
+    https://itpeernetwork.intel.com/power-and-energy-efficiency-double-your-benefit/  +
++
+--
+____
+> Power efficiency is about doing more within a fixed capability  +
+> Energy Efficiency is about “making every kWh count”
+____
+--
 
-* Ar DC tyrimams praverstų MPTCP Proxy naudojimas, ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)?  \
+* Ar DC tyrimams praverstų **MPTCP Proxy** naudojimas?  +
+Ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)
 ** https://hal.inria.fr/hal-01434867/document
-    > **Multipath TCP Proxy: unshackling network nodes from today’s end-to-end connection principle**
-    > 
-    > Fig. 1. Creation of the split TCP-MPTCP connection, after insertion of the MPTCP Proxy in between the communication ends.
++
+--
+____
+> **Multipath TCP Proxy: unshackling network nodes from today’s end-to-end connection principle**
+> 
+> Fig. 1. Creation of the split TCP-MPTCP connection, after insertion of the MPTCP Proxy in between the communication ends.
+____
+--
 
 ** https://spyff.github.io/mptcp/2017/08/27/transparent-mptcp-proxy/
-    > **Multipath Wi-Fi bridging with transparent MPTCP proxy on LEDE**
++
+--
+____
+> **Multipath Wi-Fi bridging with transparent MPTCP proxy on LEDE**
+____
+--
 
+<<<
 ---
 ### Kitos mintys
 
@@ -200,23 +224,25 @@ ____
 ** https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
     > **27. Getting started with Multipath TCP**
 
+<<<
+---
 === MPTCP protokolo saugumo klausimai
 
-* **cross-path data fragmentation**: +
+* **Cross-path data fragmentation**: +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
 ____
-Multipath routing causes cross-path data fragmentation. From a security perspective that challenges in-line security solutions (e.g., firewalls, IDSs, and malware scanners) which only "see" one path's traffic. Without being able to see all paths, these devices may miss activity that they're meant to be monitoring for. These intermediary devices act a bit like an airport body scanner for the passengers wanting to enter the airport gate area. 
+> Multipath routing causes cross-path data fragmentation. From a security perspective that challenges in-line security solutions (e.g., firewalls, IDSs, and malware scanners) which only "see" one path's traffic. Without being able to see all paths, these devices may miss activity that they're meant to be monitoring for. These intermediary devices act a bit like an airport body scanner for the passengers wanting to enter the airport gate area. 
 ____
 
-* **the old and the new approaches**
+* **Senas ir naujas požiūris į TCP sesijos duomenų išlygiagretinimą**
 ____
-So does that make Firewalls useless?  No, of course not. Perimeter and inline security solutions, like Firewalls and Intrusion Detection Systems, are not dead.  They have and always will perform important duties for protecting perimeters.  Perimeters are more numerous and now include an organization's cloud infrastructure. But, security approaches like Zero Trust and the Cloud Security Alliance's https://cloudsecurityalliance.org/research/working-groups/software-defined-perimeter-and-zero-trust/[Software Defined Perimeter (SDP)] provide a new approach that applies to the world where end-user devices are everywhere and not restricted to office only use and applications that are also everywhere, ranging from on-premise to private cloud and public cloud.
+> So does that make Firewalls useless?  No, of course not. Perimeter and inline security solutions, like Firewalls and Intrusion Detection Systems, are not dead.  They have and always will perform important duties for protecting perimeters.  Perimeters are more numerous and now include an organization's cloud infrastructure. But, security approaches like Zero Trust and the Cloud Security Alliance's https://cloudsecurityalliance.org/research/working-groups/software-defined-perimeter-and-zero-trust/[Software Defined Perimeter (SDP)] provide a new approach that applies to the world where end-user devices are everywhere and not restricted to office only use and applications that are also everywhere, ranging from on-premise to private cloud and public cloud.
 ____
 
 * **Security Evaluation of Multipath TCP** +
   https://www.diva-portal.org/smash/get/diva2:934158/FULLTEXT01.pdf
 ____
-The new protocol has been carefully crafted to meet the required security goals, but due to its
+> The new protocol has been carefully crafted to meet the required security goals, but due to its
 very nature, it inevitably changes how data is transferred across the networks, drastically affecting
 the way information can be accessed and inspected. From this perspective, working on the security
 evaluation of MPTCP has important implications regarding ethical concerns. By splitting a logical
@@ -225,9 +251,9 @@ different ISPs for different subflows, would make it so much harder to inspect a
 information regarding the ongoing connections by acting within the core of the Internet. Despite
 this might be seen as a potential benefit for clients aiming at achieving full anonymization in
 the network, many current intrusion mechanisms and similar technologies might fail under these
-new circumstances, perhaps causing even more security threats overall.
-
-Overall, MPTCP can drastically change how privacy is handled within the Internet, while the
+new circumstances, perhaps causing even more security threats overall.  +
+>  +
+> Overall, MPTCP can drastically change how privacy is handled within the Internet, while the
 security aspects should remain unchanged, if not improved, with respect to current TCP. Moreover,
 MPTCP would bring a positive impact for the environment due to a better resources exploitation,
 if deployed at large scale. Finally, the new protocol would allow to achieve a series of benefits that
