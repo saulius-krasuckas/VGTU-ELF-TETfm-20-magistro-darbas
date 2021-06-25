@@ -81,6 +81,14 @@
     > * The TCP incast problem that causes **temporal switch buffer overflow** due to synchronized traffic arrival
     > * The last hop unfairness that causes **persistent buffer inflation** and serious **unfairness**
 
+* Kaip DC pritaikomas / kiek sklandus yra / ar įmanomas automatinis srauto Handover-is:
+  * https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
+    > just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. [...] MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
+
+* Gal verta ištirti _Network Collision_ pasikeitimus įjungus MPTCP?  
+  https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
+  > just like a highway clover-leaf interchange where traffic from one highway can merge onto the other with ease, MPTCP allows mobile hosts to hand over traffic from Wi-Fi to cellular, without disrupting the application. This is especially important as available bandwidth for wireless connections vary over time and while in motion. And because MPTCP is part of the networking stack, it is transparent to the application. MPTCP also dramatically reduces the number of network collisions, which is why you never achieve the full speed of any connection.
+
 
 * Energonašumas:
   * `eMTCP` – energy-aware MPTCP  
