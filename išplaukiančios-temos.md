@@ -99,7 +99,11 @@
     > Power efficiency is about doing more within a fixed capability  
     > Energy Efficiency is about “making every kWh count”
 
-* Ar DC tyrimams praverstų MPTCP Proxy naudojimas, ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)?
+* Ar DC tyrimams praverstų MPTCP Proxy naudojimas, ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)?  \
+  https://hal.inria.fr/hal-01434867/document
+  > **Multipath TCP Proxy: unshackling network nodes from today’s end-to-end connection principle**
+  > 
+  > Fig. 1. Creation of the split TCP-MPTCP connection, after insertion of the MPTCP Proxy in between the communication ends.
 
 ---
 ### Kitos mintys
