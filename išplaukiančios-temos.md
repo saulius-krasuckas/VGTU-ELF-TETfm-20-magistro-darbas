@@ -98,6 +98,9 @@
     https://itpeernetwork.intel.com/power-and-energy-efficiency-double-your-benefit/  
     > Power efficiency is about doing more within a fixed capability  
     > Energy Efficiency is about “making every kWh count”
+
+* Ar DC tyrimams praverstų MPTCP Proxy naudojimas, ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)?
+
 ---
 ### Kitos mintys
 
