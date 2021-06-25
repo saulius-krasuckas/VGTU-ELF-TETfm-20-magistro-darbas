@@ -172,7 +172,6 @@ ____
 ____
 --
 
-<<<
 ---
 === Santykis su _Legacy_ aplikacijomis:
 
@@ -266,7 +265,6 @@ ____
 --
 
 
-<<<
 ---
 === MPTCP protokolo saugumo klausimai
 
