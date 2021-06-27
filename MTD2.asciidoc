@@ -1,4 +1,4 @@
-# Vilniaus Gedimino technikos universitetas
+# {nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Vilniaus Gedimino technikos universitetas
 
 [.text-center]
 ## Elektronikos fakultetas
@@ -29,7 +29,9 @@ Modulis ELKRM17203
 [.text-right]
 **Atliko:** TETfm-20 grupės magistrantas +
                        Saulius Krasuckas +
-**Tikrino:** doc. dr. Darius Guršnys lektorius
+**Tikrino:** doc. dr. Darius Guršnys
+
+{nbsp}
 
 {nbsp}
 
@@ -77,10 +79,12 @@ image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5d
 *** fiziniam modeliui
 *** modeliui su virtualiomis mašinomis
 
-* **Ką išsprendžia MPTCP ir kokie jo trūkumai?** +
-   +
-  Juos turbūt labiausiai ir taikausi tirti:
-  
+=== Ką išsprendžia MPTCP ir kokie jo trūkumai?
+[.text-left]
+
+Trūkumus labiausiai ir taikausi tirti:
+
+[.text-left]
 ** https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-020-00160-3 +
 Išsprendžia:
 +
