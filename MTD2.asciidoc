@@ -343,3 +343,25 @@ could drastically improve user experience for data transferring in the Internet 
 data centers, i.e. wherever TCP is currently adopted
 ____
 --
+
+---
+=== Galima fizinė 10 Gbps įranga bandymams
+
+1. CISCO UCS 5108 Cisco Unified Computing System, 6U:
+ - 1 vnt.:  +
+   8 vnt. Intel Xeon  E7-4870 30M Cache, 2.40 GHz, 6.40 GT/s Intel® QPI 10c/20t + 1024 GiB RAM
+ - 4 vnt. B440 M2 blades. Blade Specs:  +
+   *  2 x Intel Xeon  E7-4870 30M Cache, 2.40 GHz, 6.40 GT/s Intel® QPI 10c/20t  (2 No - spare)  +
+   * 16 x 16 GiB = 256 GiB DDR3-10600R RAM  +
+ - 2 vnt. 8-Ports UCS 2208XP 10Gb Fabric Extender
+ - 4 vnt. 2500 W PSU
+ - 4 vnt. B440 M2 blades
+
+2. Cisco N5K-C5548UP-FA **Nexus 5548 UP** Chassis 32-Port **10Gb Ethernet Switch**
+ - 2 vnt.
+
+3. Cisco UCS-FI-6248UP **32-Port 10Gb Fabric Interconnect Switch**
+ - 2 vnt.
+ 
+
+VISO SIO REIKALO kaina eur 2,649
