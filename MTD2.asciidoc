@@ -1,4 +1,51 @@
+# Vilniaus Gedimino technikos universitetas
+
+[.text-center]
+## Elektronikos fakultetas
+
+### Kompiuterijos ir ryšių technologijų katedra
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+### Magistro tiriamasis darbas 2
+Modulis ELKRM17203
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+[.text-right]
+**Atliko:** TETfm-20 grupės magistrantas +
+                       Saulius Krasuckas +
+**Tikrino:** doc. dr. Darius Guršnys lektorius
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+{nbsp}
+
+VILNIUS, 2021
+
+<<<
+---
+
 === DCN tipai
+[.text-left]
 
 * Kokie yra DCN (Data Center Networks) tipai?
 ** https://www.diva-portal.org/smash/get/diva2:1164941/FULLTEXT01.pdf#page=10
@@ -12,7 +59,7 @@ ____
 3.2 Data Center Networking +
 ____
 --
-
++
 image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5dd-11eb-8824-a657c3d0ad83.png[]
 
 * Kurį DCN tipą (ar kelis) tirsime / emuliuosime?
@@ -32,7 +79,7 @@ image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5d
 
 * **Ką išsprendžia MPTCP ir kokie jo trūkumai?** +
    +
-  Juos turbūt labiausiai ir verta tirti
+  Juos turbūt labiausiai ir taikausi tirti:
   
 ** https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-020-00160-3 +
 Išsprendžia:
@@ -166,6 +213,8 @@ ____
 <<<
 ---
 === Energonašumas:
+[.text-left]
+
 * `eMTCP` – energy-aware MPTCP  +
     A Traffic Burstiness-based Offload Scheme for Energy Efficiency Deliveries in Heterogeneous Wireless Networks  
     https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.702.3596&rep=rep1&type=pdf
@@ -181,6 +230,7 @@ ____
 
 ---
 === Santykis su _Legacy_ aplikacijomis:
+[.text-left]
 
 * Ar DC tyrimams praverstų **MPTCP Proxy** naudojimas?  +
 Ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)
@@ -210,9 +260,10 @@ image::https://raw.githubusercontent.com/spyff/draw.io/master/GSoC2017_final_top
 
 <<<
 ---
-### Kitos mintys
+### Papildomi aspektai
+[.text-left]
 
-* Pritaikomumas CDNams:  
+* Pritaikomumo CDNams tyrimo galimybės įvertinimas:  
 ** Network Architecture (R02) | IP Multipath – Path Selection&CC  +
     Jon Crowcroft  +
     https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  +
@@ -269,11 +320,11 @@ ____
 > > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
 
 
-** Vienas iš įrankų:  +
+** Vienas iš naujų įrankų:  +
    https://github.com/kristrev/multihomed-routing  +
 *** Ar jis veikia su `netplan`?
 
-* Esu numatęs naudoti **RHEL 8.3** arba **8.4**:
+* Nors planas prasideda nuo OpenWRT Linux, galiausiai esu numatęs naudoti serverinę distribuciją **RHEL 8.3** arba **8.4**:
 ** https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
 +
 --
@@ -301,6 +352,7 @@ ____
 
 ---
 === MPTCP protokolo saugumo klausimai
+[.text-left]
 
 * **Cross-path data fragmentation**: +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
@@ -346,8 +398,9 @@ ____
 
 ---
 === Galima fizinė 10 Gbps įranga bandymams
+[.text-left]
 
-1. CISCO UCS 5108 Cisco Unified Computing System, 6U:
+1. Cisco **UCS 5108** Cisco Unified Computing System, 6U:
  - 1 vnt.:  +
    8 vnt. Intel Xeon  E7-4870 30M Cache, 2.40 GHz, 6.40 GT/s Intel® QPI 10c/20t + 1024 GiB RAM
  - 4 vnt. B440 M2 blades. Blade Specs:  +
