@@ -293,7 +293,7 @@ ____
 --
 +
 
-* STAP (angl. _System Tap_) įrankio naudojimas `IPPROTO_MPTCP` įjungimui `socket()` kvietimo metu.
+* Linux STAP (angl. _System Tap_) įrankio naudojimas `IPPROTO_MPTCP` įjungimui `socket()` kvietimo metu.
 
 <<<
 === 5. Papildomi aspektai
@@ -355,17 +355,17 @@ ____
 --
 +
 
-> > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at
+> > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at:
 
-
-** Vienas iš naujų įrankų:  +
-    +
-   **Tools and scripts for configuring multihomed routing on Linux**  +
-   https://github.com/kristrev/multihomed-routing  +
+** https://github.com/kristrev/multihomed-routing  +
+**Tools and scripts for configuring multihomed routing on Linux**  +
+  +
+   Vienas iš naujų įrankų:
 *** Veikia su `Network Manager` valdikliu.
 *** Ar veikia su nauju `netplan` valdikliu?
 
 * Nors bandymų planas pradedamas nuo OpenWRT grįstos Linux distribucijos **OpenMPTCPRouter**, galiausiai esu numatęs naudoti serverinę distribuciją **RHEL 8.3** arba **8.4**:
+
 ** **Multipath TCP on Red Hat Enterprise Linux 8.3: From 0 to 1 subflows**, August 19, 2020  +
    https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
 +
@@ -384,7 +384,7 @@ ____
 > Pretty sure RH's interest in the backport is for their customers **large DC solutions**, where **100/200GbE NICs** are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
 ____
 --
-Beveik akivaizdu, jog tyrimams reikalingi 10G NIC.  +
+Beveik akivaizdu, jog tyrimams reikalingi **10G** spartos **NIC**.  +
  +
 
 ** **Red Hat Enterprise Linux8Configuring and managing networking** gidas:  +
@@ -401,8 +401,7 @@ ____
 ____
 --
 
-
----
+<<<
 === 6. Galimi MPTCP protokolo saugumo klausimai
 [.text-left]
 
@@ -448,7 +447,7 @@ data centers, i.e. wherever TCP is currently adopted
 ____
 --
 
----
+<<<
 === 7. Galima fizinė 10 Gbps įranga bandymams
 [.text-left]
 
@@ -470,3 +469,4 @@ ____
  
 4. Įrangos rinkinio preliminari kaina:
  - 2.650 €
+ 
