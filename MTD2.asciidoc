@@ -55,14 +55,13 @@ VILNIUS, 2021
 
 ==== 1. DCN tipai
 ==== 2. Ką išsprendžia MPTCP ir kokie jo trūkumai?
-==== 3. Energonašumas:
-==== 4. Santykis su _Legacy_ aplikacijomis:
+==== 3. Energonašumas
+==== 4. Santykis su _Legacy_ aplikacijomis
 ==== 5. Papildomi aspektai
 ==== 6. Galimi MPTCP protokolo saugumo klausimai
 ==== 7. Galima fizinė 10 Gbps įranga bandymams
 
 <<<
----
 === 1. DCN tipai
 [.text-left]
 
@@ -96,8 +95,6 @@ image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5d
 *** fiziniam modeliui
 *** modeliui su virtualiomis mašinomis
 
-<<<
----
 === 2. Ką išsprendžia MPTCP ir kokie jo trūkumai?
 [.text-left]
 
@@ -242,7 +239,6 @@ ____
 
 
 <<<
----
 === 3. Energonašumas:
 [.text-left]
 
@@ -259,7 +255,6 @@ ____
 ____
 --
 
----
 === 4. Santykis su _Legacy_ aplikacijomis:
 [.text-left]
 
@@ -301,7 +296,6 @@ ____
 * STAP (angl. _System Tap_) įrankio naudojimas `IPPROTO_MPTCP` įjungimui `socket()` kvietimo metu.
 
 <<<
----
 === 5. Papildomi aspektai
 [.text-left]
 
