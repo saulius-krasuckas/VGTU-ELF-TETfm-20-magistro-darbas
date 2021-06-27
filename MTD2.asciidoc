@@ -46,7 +46,7 @@ VILNIUS, 2021
 <<<
 ---
 
-=== DCN tipai
+=== 1. DCN tipai
 [.text-left]
 
 * Kokie yra DCN (Data Center Networks) tipai?
@@ -79,13 +79,17 @@ image::https://user-images.githubusercontent.com/74717106/123442861-ffbd0b00-d5d
 *** fiziniam modeliui
 *** modeliui su virtualiomis mašinomis
 
-=== Ką išsprendžia MPTCP ir kokie jo trūkumai?
+<<<
+---
+=== 2. Ką išsprendžia MPTCP ir kokie jo trūkumai?
 [.text-left]
 
 Trūkumus labiausiai ir taikausi tirti:
 
 [.text-left]
-** https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-020-00160-3 +
+* Pagal **Tuning high flow concurrency for MPTCP in data center networks**, 24 February 2020 +
+   https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-020-00160-3 +
+   +
 Išsprendžia:
 +
 --
@@ -103,7 +107,9 @@ ____
 ____
 --
 
-** https://network-insight.net/2016/12/multipath-tcp/  +
+* Pagal **MULTIPATH TCP**, 10 DEC 2016  +
+   https://network-insight.net/2016/12/multipath-tcp/  +
+   +
 Išsprendžia:
 +
 --
@@ -129,9 +135,13 @@ ____
 --
 +
 
-** https://slideplayer.com/slide/17007643/  +
-    `TODO` https://arxiv.org/pdf/1707.00322.pdf  +
-    `TODO` https://github.com/mkheirkhah/amp  +
+* Pagal:  +
+   **AMP: An Adaptive Multipath TCP for Data Center Networks**, IFIP Networking 2019  +
+   https://slideplayer.com/slide/17007643/ ,  +
+   **AMP: A Better Multipath TCP for Data Center Networks**, 17 Mar 2019  +
+   https://arxiv.org/pdf/1707.00322.pdf  +
+   **Adaptive MultiPath TCP (AMP) implementation in ns-3**  +
+   https://github.com/mkheirkhah/amp  +
      +
     Išsprendžia:
 +
@@ -194,7 +204,7 @@ ____
 --
 +
 
-* Kaip DC pritaikomas / kiek sklandus yra / **ar įmanomas automatinis** srauto Handover-is:
+* Kaip DC pritaikomas / kiek sklandus / **ar vertas matavimo** srauto Handover-is:
 ** https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
 +
 --
@@ -204,7 +214,7 @@ ____
 --
 +
 
-* Gal verta ištirti _Network Collision_ pasikeitimus įjungus MPTCP?  +
+* Kiek verta tiesiogiai tirti _Network Collision_ pasikeitimus įjungus MPTCP?  +
   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
 +
 --
@@ -216,13 +226,13 @@ ____
 
 <<<
 ---
-=== Energonašumas:
+=== 3. Energonašumas:
 [.text-left]
 
 * `eMTCP` – energy-aware MPTCP  +
-    A Traffic Burstiness-based Offload Scheme for Energy Efficiency Deliveries in Heterogeneous Wireless Networks  
+    **A Traffic Burstiness-based Offload Scheme for Energy Efficiency Deliveries in Heterogeneous Wireless Networks**  +
     https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.702.3596&rep=rep1&type=pdf
-* Kurį renkamės: angl. _**Power** efficiency_ vs _**Energy** efficiency_ ?  +
+* Kurį kriterijų renkamės: angl. _**Power** efficiency_ vs _**Energy** efficiency_ ?  +
     https://itpeernetwork.intel.com/power-and-energy-efficiency-double-your-benefit/  +
 +
 --
@@ -233,42 +243,53 @@ ____
 --
 
 ---
-=== Santykis su _Legacy_ aplikacijomis:
+=== 4. Santykis su _Legacy_ aplikacijomis:
 [.text-left]
 
 * Ar DC tyrimams praverstų **MPTCP Proxy** naudojimas?  +
-Ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)
-** https://hal.inria.fr/hal-01434867/document
+  Ypač kai OS nepalaiko MPTCP (pvz. Windows Server + SQL)
+** **Multipath TCP Proxy: Unshackling Network Nodes from Today’s End-to-End Connection Principle**,  13 Jan 2017  +
+   https://hal.inria.fr/hal-01434867/document
 +
 --
 ____
-> **Multipath TCP Proxy: unshackling network nodes from today’s end-to-end connection principle**
-> 
+> image::https://user-images.githubusercontent.com/74717106/123441981-1e6ed200-d5dd-11eb-8a93-91342354d422.png[]
 > Fig. 1. Creation of the split TCP-MPTCP connection, after insertion of the MPTCP Proxy in between the communication ends.
-____
---
-+
-image::https://user-images.githubusercontent.com/74717106/123441981-1e6ed200-d5dd-11eb-8a93-91342354d422.png[]
 
-** https://spyff.github.io/mptcp/2017/08/27/transparent-mptcp-proxy/
-+
---
-____
-> **Multipath Wi-Fi bridging with transparent MPTCP proxy on LEDE**
 ____
 --
 +
-image::https://raw.githubusercontent.com/spyff/draw.io/master/GSoC2017_final_topology.jpg[]
 
-* STAP panaudojimas `IPPROTO_MPTCP` įjungimui kuriant soketus
+** https://spyff.github.io/mptcp/2017/08/27/transparent-mptcp-proxy/  +
+   **Multipath Wi-Fi bridging with transparent MPTCP proxy on LEDE**, 2017-08-27
++
+--
+____
+> **2. Assemble the physical test environment**
+> 
+> image::https://raw.githubusercontent.com/spyff/draw.io/master/GSoC2017_final_topology.jpg[]
+> 
+> For the tests, I use the following hardware:  +
+> +
+> Netgear R7000 router  +
+> Netgear R7800 router  +
+> 2 Ubiquiti Loco M5 Wi-Fi bridges  +
+> 2 Ubiquiti M5 Wi-Fi bridges  +
+> Lots of small UTP cables  +
+> A PC and a Laptop (or in some cases a RaspberryPi and a Laptop for the portable setup)  +
+____
+--
++
+
+* STAP (angl. _System Tap_) įrankio naudojimas `IPPROTO_MPTCP` įjungimui `socket()` kvietimo metu.
 
 <<<
 ---
-### Papildomi aspektai
+### 5. Papildomi aspektai
 [.text-left]
 
 * Pritaikomumo CDNams tyrimo galimybės įvertinimas:  
-** Network Architecture (R02) | IP Multipath – Path Selection&CC  +
+** **Network Architecture (R02) | IP Multipath – Path Selection&CC**  +
     Jon Crowcroft  +
     https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  +
 +
@@ -283,8 +304,10 @@ ____
 
 * WireGuard tunelio panaudojimas MPTCP srauto perdavimui per tuos DC _Middlebox_ mazgus, kurie blokuoja MPTCP žymes/laukus, bet praleidžia UDP.
 
-* Ar DC reikalingas _**Path**_ menedžeris (dinaminis _Routing Table_ valdymas)?  
-** https://dial.uclouvain.be/memoire/ucl/fr/object/thesis%3A366/datastream/PDF_01/view  +
+* Ar DC reikalingas specifinis kelių valdiklio (angl. _**Path manager**_) konfigūravimas?
+* Ar DC reikalingas dinaminis _Routing Table_ valdymas?  
+** **Multipath TCP with real Smartphone applications**, 6 Jan 2015  +
+   https://dial.uclouvain.be/memoire/ucl/fr/object/thesis%3A366/datastream/PDF_01/view  +
 +
 --
 ____
@@ -325,11 +348,15 @@ ____
 
 
 ** Vienas iš naujų įrankų:  +
+    +
+   **Tools and scripts for configuring multihomed routing on Linux**  +
    https://github.com/kristrev/multihomed-routing  +
-*** Ar jis veikia su `netplan`?
+*** Veikia su `Network Manager` valdikliu.
+*** Ar veikia su nauju `netplan` valdikliu?
 
-* Nors planas prasideda nuo OpenWRT Linux, galiausiai esu numatęs naudoti serverinę distribuciją **RHEL 8.3** arba **8.4**:
-** https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
+* Nors bandymų planas pradedamas nuo OpenWRT grįstos Linux distribucijos **OpenMPTCPRouter**, galiausiai esu numatęs naudoti serverinę distribuciją **RHEL 8.3** arba **8.4**:
+** **Multipath TCP on Red Hat Enterprise Linux 8.3: From 0 to 1 subflows**, August 19, 2020  +
+   https://developers.redhat.com/blog/2020/08/19/multipath-tcp-on-red-hat-enterprise-linux-8-3-from-0-to-1-subflows
 +
 --
 ____
@@ -337,25 +364,35 @@ ____
 ____
 --
 
-** https://www.phoronix.com/forums/forum/software/distributions/1201614-red-hat-bringing-multipath-tcp-to-rhel-8-3-as-a-tech-preview#post1201689
+** Phoronix portalo diskusija:  +
+   **Red Hat Bringing Multipath TCP To RHEL 8.3 As A Tech Preview**, 19 August 2020  +
+   https://www.phoronix.com/forums/forum/software/distributions/1201614-red-hat-bringing-multipath-tcp-to-rhel-8-3-as-a-tech-preview#post1201689
 +
 --
 ____
 > Pretty sure RH's interest in the backport is for their customers **large DC solutions**, where **100/200GbE NICs** are the sweet spot (400/800 GbE NICs are still somewhat niche solutions), but higher network performance is required.
 ____
 --
+Beveik akivaizdu, jog tyrimams reikalingi 10G NIC.  +
+ +
 
-** https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
+** **Red Hat Enterprise Linux8Configuring and managing networking** gidas:  +
+   https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/getting-started-with-multipath-tcp_configuring-and-managing-networking
 +
 --
 ____
-> **27. Getting started with Multipath TCP**
+> **27. Getting started with Multipath TCP**  +
+> ...  +
+> **27.1. Preparing RHEL to enable MPTCP support**  +
+> Few applications natively support MPTCP. Mostly, the connection and stream-oriented sockets request TCP protocol in the socket() call to the operating system. You can enable MPTCP support in RHEL using the sysctl tool for natively MPTCP-supported programs. The MPTCP implementation is also designed to allow usage of MPTCP protocol for applications requesting IPPROTO_TCP call to the kernel.  +
+>  +
+> This procedure describes how to enable MPTCP support and prepare RHEL for enabling MPTCP system-wide using a SystemTap script.
 ____
 --
 
 
 ---
-=== MPTCP protokolo saugumo klausimai
+=== 6. Galimi MPTCP protokolo saugumo klausimai
 [.text-left]
 
 * **Cross-path data fragmentation**: +
