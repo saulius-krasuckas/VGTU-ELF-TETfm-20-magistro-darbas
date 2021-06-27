@@ -363,5 +363,5 @@ ____
 3. Cisco UCS-FI-6248UP **32-Port 10Gb Fabric Interconnect Switch**
  - 2 vnt.
  
-
-VISO SIO REIKALO kaina eur 2,649
+4. Įrangos rinkinio preliminari kaina:
+ - 2.650 €
