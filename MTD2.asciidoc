@@ -66,7 +66,9 @@ VILNIUS, 2021
 [.text-left]
 
 * Kokie yra DCN (Data Center Networks) tipai?
-** https://www.diva-portal.org/smash/get/diva2:1164941/FULLTEXT01.pdf#page=10
+** **Telco Distributed DC with Transport Protocol Enhancement for 5G Mobile Networks**,  +
+   A Survey, December 2017  +
+   https://www.diva-portal.org/smash/get/diva2:1164941/FULLTEXT01.pdf#page=10
 +
 --
 ____
@@ -219,7 +221,8 @@ ____
 +
 
 * Kaip DC pritaikomas / kiek sklandus / **ar vertas matavimo** srauto Handover-is:
-** https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
+** **Understanding Multipath TCP: High availability for endpoints and the networking highway of the future**, February 9, 2021  +
+   https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
 +
 --
 ____
@@ -229,7 +232,6 @@ ____
 +
 
 * Kiek verta tiesiogiai tirti _Network Collision_ pasikeitimus įjungus MPTCP?  +
-  https://www.redhat.com/en/blog/understanding-multipath-tcp-networking-highway-future
 +
 --
 ____
@@ -326,12 +328,15 @@ ____
 ____
 --
 
-** http://multipath-tcp.org/pmwiki.php/Users/ConfigureRouting
+** The **Multipath TCP in the Linux Kernel** wiki,  +
+   Users/Testers > **Configure Routing**:  +
+   http://multipath-tcp.org/pmwiki.php/Users/ConfigureRouting
 +
 --
 ____
-> Automatic configuration with "Multihomed-Routing"
-
+> **Manual configuration**  +
+> ...
+> 
   mptcp-kernel:~# ip rule show
   0:      from all lookup local
   32764:  from 10.1.2.2 lookup 2
@@ -351,11 +356,13 @@ ____
   mptcp-kernel:~# ip route show table 2
   10.1.2.0/24 dev eth1  scope link
   default via 10.1.2.1 dev eth1
+
+> **Automatic configuration with "Multihomed-Routing"**  +
+> ...  +
+> Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at:
 ____
 --
 +
-
-> > Kristian Evensen <kristian.evensen@gmail.com> developed a set of scripts that integrate well with existing Network Managers to properly configure the multihomed routing. Check it out at:
 
 ** https://github.com/kristrev/multihomed-routing  +
 **Tools and scripts for configuring multihomed routing on Linux**  +
