@@ -298,7 +298,7 @@ ____
 === 5. Papildomi aspektai
 [.text-left]
 
-* Pritaikomumo CDNams tyrimo galimybės įvertinimas:  
+* Pritaikomumo CDNams tyrimas / galimybės įvertinimas:  
 ** **Network Architecture (R02) | IP Multipath – Path Selection&CC**  +
     Jon Crowcroft  +
     https://www.cl.cam.ac.uk/teaching/1213/R02/slides/r02-mpath.ppt#page=2  +
