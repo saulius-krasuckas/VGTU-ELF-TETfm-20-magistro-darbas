@@ -152,14 +152,11 @@ ____
 +
 
 * Pagal:  +
-   **AMP: An Adaptive Multipath TCP for Data Center Networks**, IFIP Networking 2019  +
-   https://slideplayer.com/slide/17007643/ ,  +
-   **AMP: A Better Multipath TCP for Data Center Networks**, 17 Mar 2019  +
-   https://arxiv.org/pdf/1707.00322.pdf  +
-   **Adaptive MultiPath TCP (AMP) implementation in ns-3**  +
-   https://github.com/mkheirkhah/amp  +
-     +
-    Išsprendžia:
+   https://slideplayer.com/slide/17007643/[**AMP: An Adaptive Multipath TCP for Data Center Networks**, IFIP Networking 2019]  +
+   https://arxiv.org/pdf/1707.00322.pdf[**AMP: A Better Multipath TCP for Data Center Networks**, 17 Mar 2019]  +
+   https://github.com/mkheirkhah/amp[**Adaptive MultiPath TCP (AMP) implementation in ns-3**]  +
+    +
+   Išsprendžia:
 +
 --
 ____
