@@ -37,3 +37,4 @@
 * VM multi NIC setups for Windows ? https://github.com/multipath-tcp/mptcp/issues/76
 * Ištirti TCP + MPTCP sugyvenamumą bendrose ryšio linijose?
 * Patyrinėti MPTCP saugumo (atakų aptikimo) aspektą ?
+a
