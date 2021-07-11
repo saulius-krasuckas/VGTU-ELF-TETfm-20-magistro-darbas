@@ -1,1 +1,6 @@
+**How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP**, March 15, 2012  +
+https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final125.pdf
 
+> Next, we use two hosts connected by one gigabit and
+> one 100Mb/s link to emulate inter-datacenter transfers
+> with asymmetric links.
