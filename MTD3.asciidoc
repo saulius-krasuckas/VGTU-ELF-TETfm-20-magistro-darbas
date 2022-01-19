@@ -34,10 +34,10 @@
 
 === Šaltiniai
 
-`2022-02` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
+`2022-02-xx` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
 
-`2021-12` **[[[2]]]** `springer.com`: Vidya S. Kubde, et al., https://doi.org/10.1007/978-981-16-4369-9_9[Analysis of Multipath TCP Schedulers]
+`2021-12-07` **[[[2]]]** `springer.com`: Vidya S. Kubde, et al., https://doi.org/10.1007/978-981-16-4369-9_9[Analysis of Multipath TCP Schedulers]
 
-`2021-11` **[[[3]]]** `ieee.org`: Jiamin Yao, et al., https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
+`2021-11-13` **[[[3]]]** `ieee.org`: Jiamin Yao, et al., https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
 
 `2021-10-15` **[[[4]]]** `sciencedirect.com`: SenLiu, et al.: https://doi.org/10.1016/j.jnca.2021.103169[Reducing traffic burstiness for MPTCP in data center networks]
