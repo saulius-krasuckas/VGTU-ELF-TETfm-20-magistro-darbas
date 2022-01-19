@@ -1,1 +1,10 @@
+<<1>> Intriguojantis scenarijus patestavimui:
 
+> the existing load balancing designs are agnostic to the heterogeneous datacenter traffic, i.e., a mass of delay-sensitive short flows mix with a handful of throughput-oriented long flows, and casually reroute these flows regardless of path condition, thus resulting in frequent flow collisions. The short flows suffer from the problem of large queuing delay due to colliding with long flows, while the frequent collisions between long flows lead to low network utilization and serious throughput degradation.
+> 
+> To address these inefficiencies, we propose an isolation-based load balancing scheme, namely ILB, which perceives flow collisions and dynamically isolates the long flows from short flows.
+> Specifically, when a long flow collides with short flows in the same path, it immediately switches to another path unused by short flows to help the short ones in the previous path complete quickly.
+ 
+=== Šaltiniai
+
+`2022-02` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
