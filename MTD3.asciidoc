@@ -20,7 +20,8 @@
 > a performance bottleneck exists that causes throughput collapse in the Incast communication pattern leading to the collapse and seriously affects the network energy.
 > In this paper, based on the queuing network and the Markov property of the MPTC P schedulin, process, 
 > we propose a multilevel cooperative MPTCP Incast performance evaluation model whose levels are called M/M/N/m1 M/M/L/m2 M/M/K/m3 
-> to study the delay performance in MPTCP Incast throughput 7-xxcollapebscohost.comse Mahendra.Suryavanshi, et al.:, https://web.s.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09765034&AN=151707690&h=YUGBxoXMZv2YBLBNCTgp7dz9ooA4n7SNETvjOjNlkaRIXSv0csFBYUkX%2bo9XhGS%2brJUpcqzoX2AK5vpf94j8WQ%3d%3d&crl=c
+> to study the delay performance in MPTCP Incast throughput collapse.
+
 <<5>> 
 
 > Running MPTCP protocol for latency-sensitive rack-local short flows with many-to-one communication pattern
