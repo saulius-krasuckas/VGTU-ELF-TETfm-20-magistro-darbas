@@ -18,7 +18,7 @@
 
 > With the wide application of multi host hosts, in the FatTree topology, 
 > a performance bottleneck exists that causes throughput collapse in the Incast communication pattern leading to the collapse and seriously affects the network energy.
-> In this paper, based on the queuing network and the Markov property of the MPTC P schedulin, process, 
+> In this paper, based on the queuing network and the Markov property of the MPTCP scheduling process, 
 > we propose a multilevel cooperative MPTCP Incast performance evaluation model whose levels are called M/M/N/m1 M/M/L/m2 M/M/K/m3 
 > to study the delay performance in MPTCP Incast throughput collapse.
 
