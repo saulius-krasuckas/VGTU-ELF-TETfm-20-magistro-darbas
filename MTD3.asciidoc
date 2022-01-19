@@ -18,9 +18,13 @@
 
 > With the wide application of multi host hosts, in the FatTree topology, 
 > a performance bottleneck exists that causes throughput collapse in the Incast communication pattern leading to the collapse and seriously affects the network energy.
-> In this paper, based on the queuing network and the Markov property of the MPTCP scheduling process, 
+> In this paper, based on the queuing network and the Markov property of the MPTC P schedulin, process, 
 > we propose a multilevel cooperative MPTCP Incast performance evaluation model whose levels are called M/M/N/m1 M/M/L/m2 M/M/K/m3 
-> to study the delay performance in MPTCP Incast throughput collapse.
+> to study the delay performance in MPTCP Incast throughput 7-xxcollapebscohost.comse Mahendra.Suryavanshi, et al.:, https://web.s.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09765034&AN=151707690&h=YUGBxoXMZv2YBLBNCTgp7dz9ooA4n7SNETvjOjNlkaRIXSv0csFBYUkX%2bo9XhGS%2brJUpcqzoX2AK5vpf94j8WQ%3d%3d&crl=c
+<<5>> 
+
+> Running MPTCP protocol for latency-sensitive rack-local short flows with many-to-one communication pattern
+> at the access layer of multi-homed data center networks creates MPTCP incast problem. 
 
 {nbsp}  +
 
@@ -31,6 +35,7 @@
 > Due to the connection-level ACK blocking, however, MPTCP suffers from the traffic burstiness,
 > which leads to large queueing delay, frequent packet drops, and even TCP timeout.
 
+{nbsp}  +
 
 === Šaltiniai
 
@@ -40,4 +45,6 @@
 
 `2021-11-13` **[[[3]]]** `ieee.org`: Jiamin Yao, et al., https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
 
-`2021-10-15` **[[[4]]]** `sciencedirect.com`: SenLiu, et al.: https://doi.org/10.1016/j.jnca.2021.103169[Reducing traffic burstiness for MPTCP in data center networks]
+`2021-10-15` **[[[4]]]** `sciencedirect.com`: Sen Liu, et al., https://doi.org/10.1016/j.jnca.2021.103169[Reducing traffic burstiness for MPTCP in data center networks]
+
+`2021-07-xx` **[[[5]]]* `ebscohost.com`: Mahendra Suryavanshi, et al., https://web.s.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09765034&AN=151707690&h=YUGBxoXMZv2YBLBNCTgp7dz9ooA4n7SNETvjOjNlkaRIXSv0csFBYUkX%2bo9XhGS%2brJUpcqzoX2AK5vpf94j8WQ%3d%3d&crl=c[Balanced Multipath Transport Protocol for Mitigating MPTCP Incast in Data Center Networks.]
