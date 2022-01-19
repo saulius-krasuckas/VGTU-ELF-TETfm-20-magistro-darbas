@@ -22,7 +22,7 @@
 > we propose a multilevel cooperative MPTCP Incast performance evaluation model whose levels are called M/M/N/m1 M/M/L/m2 M/M/K/m3 
 > to study the delay performance in MPTCP Incast throughput collapse.
 
-<<5>> 
+<<5>> ... taip pat:
 
 > Running MPTCP protocol for latency-sensitive rack-local short flows with many-to-one communication pattern
 > at the access layer of multi-homed data center networks creates MPTCP incast problem. 
@@ -38,14 +38,29 @@
 
 {nbsp}  +
 
+<<6>> Galimas kriterijus matavimui -- kiek keičiasi _"flow completion time (FCT) at 70% network load"_:
+
+> In this work, we propose Closer, a scalable congestion-aware load balancer for cloud datacenters.
+> Closer complies with the evaluation of technology including the deployment of regular Clos topologies,
+> overlays for network virtualization, and virtual machine (VM) clusters.
+> Leveraging In-band Network Telemetry (INT) to obtain precise link load information [...]
+> enables Closer to proactively map the flows to the appropriate path and avoid the excessive congestion of a single link.
+> Closer decouples the system into centralized route calculation and distributed route decision to guarantee its efficiency and stability in large-scale networks.
+> In tested experiments, Closer achieves 2–7 times better flow completion time (FCT) than existing alternatives at 70% network load.
+
+{nbsp}  +
+
+
 === Šaltiniai
 
 `2022-02-xx` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
 
-`2021-12-07` **[[[2]]]** `springer.com`: Vidya S. Kubde, et al., https://doi.org/10.1007/978-981-16-4369-9_9[Analysis of Multipath TCP Schedulers]
+`2021-12-07` **[[[2]]]** `springer.com`: Vidya S. Kubde et al., https://doi.org/10.1007/978-981-16-4369-9_9[Analysis of Multipath TCP Schedulers]
 
-`2021-11-13` **[[[3]]]** `ieee.org`: Jiamin Yao, et al., https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
+`2021-11-13` **[[[3]]]** `ieee.org`: Jiamin Yao, et al. https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
 
-`2021-10-15` **[[[4]]]** `sciencedirect.com`: Sen Liu, et al., https://doi.org/10.1016/j.jnca.2021.103169[Reducing traffic burstiness for MPTCP in data center networks]
+`2021-10-15` **[[[4]]]** `sciencedirect.com`: Sen Liu et al., https://doi.org/10.1016/j.jnca.2021.103169[Reducing traffic burstiness for MPTCP in data center networks]
 
-`2021-07-xx` **[[[5]]]* `ebscohost.com`: Mahendra Suryavanshi, et al., https://web.s.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09765034&AN=151707690&h=YUGBxoXMZv2YBLBNCTgp7dz9ooA4n7SNETvjOjNlkaRIXSv0csFBYUkX%2bo9XhGS%2brJUpcqzoX2AK5vpf94j8WQ%3d%3d&crl=c[Balanced Multipath Transport Protocol for Mitigating MPTCP Incast in Data Center Networks.]
+`2021-07-xx` **[[[5]]]** `ebscohost.com`: Mahendra Suryavanshi et al., https://web.s.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09765034&AN=151707690&h=YUGBxoXMZv2YBLBNCTgp7dz9ooA4n7SNETvjOjNlkaRIXSv0csFBYUkX%2bo9XhGS%2brJUpcqzoX2AK5vpf94j8WQ%3d%3d&crl=c[Balanced Multipath Transport Protocol for Mitigating MPTCP Incast in Data Center Networks.]
+
+`2020-10-xx` **[[[6]]]** `iop.org`: Zixi Cui et al., https://doi.org/10.1088/1742-6596/1738/1/012071[An INT-based Load Balancing Mechanism for Cloud Datacenters]
