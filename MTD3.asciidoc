@@ -12,8 +12,20 @@
 > We also compared four schedulers of MPTCP that are implemented in Linux Kernel.
 > Results showed that difference in round trip times of sub-paths affects MPTCP performance. 
 
+{nbsp}  +
+
+<<3>> Kitas intriguojantis scenarijus testavimui ir išmatavimui:
+
+> With the wide application of multi host hosts, in the FatTree topology, 
+> a performance bottleneck exists that causes throughput collapse in the Incast communication pattern leading to the collapse and seriously affects the network energy.
+> In this paper, based on the queuing network and the Markov property of the MPTCP scheduling process, 
+> we propose a multilevel cooperative MPTCP Incast performance evaluation model whose levels are called M/M/N/m1 M/M/L/m2 M/M/K/m3 
+> to study the delay performance in MPTCP Incast throughput collapse.
+
 === Šaltiniai
 
 `2022-02` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
 
 `2021-12` **[[[2]]]** `springer.com`: Vidya S. Kubde, et al., https://doi.org/10.1007/978-981-16-4369-9_9[Analysis of Multipath TCP Schedulers]
+
+`2021-11` **[[[3]]]** `ieee.org`: Jiamin Yao, et al., https://doi.org/10.1109/TGCN.2021.3125860[Performance Evaluation of MPTCP Incast Based on Queuing Network]
