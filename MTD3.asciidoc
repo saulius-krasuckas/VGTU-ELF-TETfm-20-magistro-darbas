@@ -51,6 +51,7 @@
 {nbsp}  +
 
 
+[bibliography]
 === Šaltiniai
 
 `2022-02-xx` **[[[1]]]** `sciencedirect.com`: _Tao Zhang_ et al., https://doi.org/10.1016/j.future.2021.09.002[Load balancing with traffic isolation in data center networks]
