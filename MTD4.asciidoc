@@ -1,1 +1,3 @@
+### Proxy mechanizm (ypač _Transparent_) naudojimas MPTCP srautui sukurti:
 
+(Iš https://twitter.com/sskras/status/1535537333101109248[Twitter gijos])
