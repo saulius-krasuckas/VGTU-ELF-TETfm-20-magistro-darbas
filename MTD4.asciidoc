@@ -2,36 +2,36 @@
 
 (Iš https://twitter.com/sskras/status/1535537333101109248[Twitter gijos])
 
-- ss-redir - shadowsocks client as transparent proxy, libev port
+- ss-redir - shadowsocks client as transparent proxy, libev port +
++
+https://manpages.debian.org/testing/shadowsocks-libev/ss-redir.1.en.html +
+https://github.com/shadowsocks/shadowsocks-libev/commits/master/src/redir.c
 
-https://manpages.debian.org/testing/shadowsocks-libev/ss-redir.1.en.html  
-https://github.com/shadowsocks/shadowsocks-libev/commits/master/src/redir.c  
+- C implementation from Bell Labs: +
++
+https://github.com/phhusson/mptcp-proxy +
+https://github.com/zpx2012/mptcp-proxy
 
-- C implementation from Bell Labs:
+- Rust implementation: +
++
+https://github.com/hrntknr/mptcp-proxy
 
-https://github.com/phhusson/mptcp-proxy  
-https://github.com/zpx2012/mptcp-proxy  
-
-- Rust implementation:
-
-https://github.com/hrntknr/mptcp-proxy  
-
-- Transparent Cloud Access Performance Augmentation via an MPTCP-LISP Connection Proxy:
-
-http://deptinfo.cnam.fr/~seccis/papers/BePhSe-ANCS15.pdf  
+- Transparent Cloud Access Performance Augmentation via an MPTCP-LISP Connection Proxy: +
++
+http://deptinfo.cnam.fr/~seccis/papers/BePhSe-ANCS15.pdf +
 (MPTCP-LISP implementation for LISPmob, which became OpenOverlayRouter formerly)  
 
-- Transparent Multipath: Using Double MPTCP Proxies to Enhance Transport Performance for Traditional TCP:
+- Transparent Multipath: Using Double MPTCP Proxies to Enhance Transport Performance for Traditional TCP: +
++
+https://ieeexplore.ieee.org/document/9579444 +
 
-https://ieeexplore.ieee.org/document/9579444  
-
-- Multipath TCP Proxy: Unshackling Network Nodes from Today’s End-to-End Connection Principle:
-
-https://hal.inria.fr/hal-01434867/document  
-
+- Multipath TCP Proxy: Unshackling Network Nodes from Today’s End-to-End Connection Principle: +
++
+https://hal.inria.fr/hal-01434867/document +
++
 (A questionable entry, but just in case. It proposes to establish a single MPTCP session between two proxy-hosts and put everything into it)
 
-- MPTCP Tunnel: An Architecture for Aggregating Bandwidth of Heterogeneous Access Networks:
-
-https://www.hindawi.com/journals/wcmc/2018/2045760/  
-https://github.com/dfshan/mptcp-tunnel  
+- MPTCP Tunnel: An Architecture for Aggregating Bandwidth of Heterogeneous Access Networks: +
++
+https://www.hindawi.com/journals/wcmc/2018/2045760/ +
+https://github.com/dfshan/mptcp-tunnel
