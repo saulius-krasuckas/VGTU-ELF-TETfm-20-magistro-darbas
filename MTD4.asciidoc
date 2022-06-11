@@ -27,10 +27,10 @@ https://ieeexplore.ieee.org/document/9579444 +
 
 - Multipath TCP Proxy: Unshackling Network Nodes from Today’s End-to-End Connection Principle: +
 +
-https://hal.inria.fr/hal-01434867/document +
+https://hal.inria.fr/hal-01434867/document
 
 - MPTCP Tunnel: An Architecture for Aggregating Bandwidth of Heterogeneous Access Networks: +
 +
 https://www.hindawi.com/journals/wcmc/2018/2045760/ +
 https://github.com/dfshan/mptcp-tunnel
-(A questionable entry, but just in case. It proposes to establish a single MPTCP session between two proxy-hosts and put everything into it)
+(A questionable entry, but just in case. It proposes to establish a single MPTCP session between two proxy-hosts and put everything into it) +
