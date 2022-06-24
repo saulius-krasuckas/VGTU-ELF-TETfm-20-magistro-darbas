@@ -34,3 +34,9 @@ https://hal.inria.fr/hal-01434867/document
 https://www.hindawi.com/journals/wcmc/2018/2045760/ +
 https://github.com/dfshan/mptcp-tunnel +
 (A questionable entry, but just in case. It proposes to establish a single MPTCP session between two proxy-hosts and put everything into it)
+
+- Multipath in the Middle(Box): +
++
+https://inl.info.ucl.ac.be/publications/multipath-middlebox.html +
+https://inl.info.ucl.ac.be/system/files/hotmb07-detal.pdf
+
